@@ -1,10 +1,10 @@
-Filmlane - Best movie collections
+Movieshdbox - Best movie collections
 
 
 
 # HEADER
 
-alt = Filmlane logo
+alt = Movieshdbox logo
 
 <ion-icon name="search-outline"></ion-icon>
 
@@ -19,7 +19,7 @@ Sign in
 
 <ion-icon name="reorder-two"></ion-icon>
 
-alt = Filmlane logo
+alt = Movieshdbox logo
 
 <ion-icon name="close-outline"></ion-icon>
 
@@ -255,7 +255,7 @@ Get started
 
 # FOOTER
 
-alt = Filmlane logo
+alt = Movieshdbox logo
 
 Home
 Movie
