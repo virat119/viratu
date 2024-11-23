@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesHDBox - Movies List</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Download the latest Hollywood, Bollywood, South Hindi Dubbed Movies. Visit MoviesHDBox for high-quality movie downloads.">
+    <meta name="keywords" content="Hollywood movies, Bollywood movies, South Hindi Dubbed movies, free movie downloads, MoviesHDBox">
+    <meta name="author" content="MoviesHDBox">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MoviesHDBox - Movies List">
+    <meta property="og:description" content="Download the latest Hollywood, Bollywood, South Hindi Dubbed Movies from MoviesHDBox.">
+    <meta property="og:image" content="https://yourimageurl.com/banner_image.jpg">
+    <meta property="og:url" content="https://www.movieshdbox.site">
+    <meta property="og:type" content="website">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL8CY9KMK6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-FL8CY9KMK6');
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Banner Section */
+        .banner {
+            background: linear-gradient(45deg, #ff7b00, #ff006e);
+            color: white;
+            padding: 30px 0;
+            font-size: 35px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .banner img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        /* Sliding Text Section */
+        .sliding-text {
+            background-color: #ff006e;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            animation: slide 20s linear infinite;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Random Color for Sliding Text */
+        .sliding-text {
+            animation: colorChange 10s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% { background-color: #FF5733; }
+            20% { background-color: #33FF57; }
+            40% { background-color: #3357FF; }
+            60% { background-color: #FF33A1; }
+            80% { background-color: #FF8333; }
+            100% { background-color: #33FF8C; }
+        }
+
+        /* Folder Style */
+        .folder-container {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .folder {
+            margin: 10px;
+            padding: 15px;
+            width: 250px;
+            background-color: #d32f2f; /* Red Folder */
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .folder:hover {
+            background-color: #c62828;
+            transform: scale(1.05);
+        }
+
+        /* Movie List Style */
+        .movies-list {
+            display: none;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        /* Movie Item Style */
+        .movie-item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .movie-item:hover {
+            transform: scale(1.05);
+            background-color: #444;
+        }
+
+        .movie-item img {
+            width: 120px;
+            height: 160px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .movie-details {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .movie-details h4 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff7b00;
+        }
+
+        .movie-size {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .download-btn {
+            background: linear-gradient(90deg, #ff7b00, #ff006e);
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Folder Toggle Function */
+        function toggleMovies(folderId) {
+            const moviesList = document.getElementById(folderId);
+            const allMoviesLists = document.querySelectorAll('.movies-list');
+            allMoviesLists.forEach(list => {
+                if (list !== moviesList) {
+                    list.style.display = "none";  // Hide other folders
+                }
+            });
+
+            // Toggle the visibility of the selected folder's movie list
+            if (moviesList.style.display === "none" || moviesList.style.display === "") {
+                moviesList.style.display = "block";
+            } else {
+                moviesList.style.display = "none";
+            }
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .banner {
+                font-size: 24px;
+                padding: 20px 0;
+            }
+
+            .folder {
+                width: 220px;
+            }
+
+            .movie-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .movie-item img {
+                width: 100px;
+                height: 130px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Section with Logo -->
+    <div class="banner">
+        <img src="https://raw.githubusercontent.com/virat119/images/refs/heads/main/project-logo.png.jpg" alt="MoviesHDBox Logo"> <!-- Add your logo here -->
+        MoviesHDBox
+    </div>
+
+    <!-- Sliding Text Section -->
+    <div class="sliding-text">
+        Explore the latest movies in HD quality. Download Hollywood, Bollywood, and South movies now!
+    </div>
+
+    <!-- Folder Section with Movies -->
+    <div class="folder-container">
+        <div class="folder" onclick="toggleMovies('hollywood-movies-list')">
+            Hollywood Movies
+        </div>
+        <div class="folder" onclick="toggleMovies('bollywood-movies-list')">
+            Bollywood Movies
+        </div>
+        <!-- Add More Folders Here -->
+    </div>
+
+    <!-- Hollywood Movies List -->
+    <div id="hollywood-movies-list" class="movies-list">
+        <div class="movie-item">
+            <img src="https://raw.githubusercontent.com/virat119/images/refs/heads/main/628_resize2x_230x300.webp" alt="Movie Poster">
+            <div class="movie-details">
+                <h4>Movie Title 1</h4>
+                <div class="movie-size">Size: 1.2 GB</div>
+            </div>
+            <a class="download-btn" href="https://www.hdmania.org/download/dl/829?st=7fec209f1939bdbce868e50ca1131f13b69b40536009744d25d0ec9fd7d93c25&amp;e=1732382857" target="_blank" download>Download</a>
+        </div>
+        <!-- Add More Movies Here -->
+    </div>
+
+    <!-- Bollywood Movies List -->
+    <div id="bollywood-movies-list" class="movies-list">
+        <div class="movie-item">
+            <img src="https://example.com/poster2.jpg" alt="Movie Poster">
+            <div class="movie-details">
+            	<h4>Movie Title 2</h4>
+            <div class="movie-size">Size: 1.5 GB</div>
+        </div>
+        <a class="download-btn" href="https://example.com/download2" target="_blank" download>Download</a>
+    </div>
+
+    <!-- You can add more movie lists for other folders (e.g., South Indian Movies) -->
+    <!-- Example for another folder -->
+    <div id="south-movies-list" class="movies-list">
+        <div class="movie-item">
+            <img src="https://example.com/poster3.jpg" alt="Movie Poster">
+            <div class="movie-details">
+                <h4>Movie Title 3</h4>
+                <div class="movie-size">Size: 1.8 GB</div>
+            </div>
+            <a class="download-btn" href="https://example.com/download3" target="_blank" download>Download</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #333; color: white; padding: 20px; font-size: 14px;">
+        <p>© 2024 MoviesHDBox. All rights reserved.</p>
+        <p>Follow us on <a href="https://www.facebook.com/MoviesHDBox" style="color: #ff7b00;">Facebook</a> and <a href="https://twitter.com/MoviesHDBox" style="color: #ff7b00;">Twitter</a>.</p>
+    </footer>
+
+    <script>
+        // Folder Toggle Function (already included in the CSS above)
+        function toggleMovies(folderId) {
+            const moviesList = document.getElementById(folderId);
+            const allMoviesLists = document.querySelectorAll('.movies-list');
+            allMoviesLists.forEach(list => {
+                if (list !== moviesList) {
+                    list.style.display = "none";  // Hide other folders
+                }
+            });
+
+            // Toggle the visibility of the selected folder's movie list
+            if (moviesList.style.display === "none" || moviesList.style.display === "") {
+                moviesList.style.display = "block";
+            } else {
+                moviesList.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
