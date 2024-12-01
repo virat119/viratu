@@ -1,0 +1,27 @@
+name: Update Movie List
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Har ghante run karega (aap isse customize kar sakte hain)
+  workflow_dispatch:  # Manual trigger bhi enable karte hain
+
+jobs:
+  update-movies:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install requests beautifulsoup4
+
+    - name: Run scraping script
+      run: |
+        python scrape_and_update.py  # Apne Python script ka naam yahan likhen
