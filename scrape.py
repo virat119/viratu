@@ -1,6 +1,6 @@
+import os
 import requests
 from bs4 import BeautifulSoup
-import os
 
 # URL of the HD Mania website (ye URL aapko customize karna hoga)
 base_url = "https://www.hdmania.org/movies"
@@ -46,4 +46,8 @@ if new_movies:
     with open('movies.html', 'w', encoding='utf-8') as file:
         file.write(updated_content)
 
-print("Movies list updated successfully.")
+    # File size calculate karna aur print karna
+    file_size = os.path.getsize('movies.html') / (1024 * 1024)  # Size in MB
+    print(f"Movies list updated successfully. Current file size: {file_size:.2f} MB")
+else:
+    print("No new movies found. The file has not been updated.")
