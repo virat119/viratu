@@ -2,7 +2,7 @@ name: Update Movie List
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Har ghante run karega (aap isse customize kar sakte hain)
+    - cron: '*/5 * * * *'  # Har 5 minute mein run karega
   workflow_dispatch:  # Manual trigger bhi enable karte hain
 
 jobs:
