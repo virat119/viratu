@@ -89,25 +89,28 @@
             color: #888;
             margin: 5px 0;
         }
-        .buttons {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 10px;
-        }
-        .download-button, .play-online-button {
-            display: inline-block;
-            padding: 5px 10px;
-            background-color: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            border: none;
-            font-size: 0.9em;
-        }
-        .download-button:hover, .play-online-button:hover {
-            background-color: #0056b3;
-        }
+     .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px; /* Added to create space between buttons */
+}
+
+.download-button, .play-online-button {
+    display: inline-block;
+    padding: 4px 8px; /* Reduced padding for smaller buttons */
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.8em; /* Reduced font size for smaller buttons */
+}
+
+.download-button:hover, .play-online-button:hover {
+    background-color: #0056b3;
+}
 
         /* Telegram icon styling */
         .telegram-link img {
