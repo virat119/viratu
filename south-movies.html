@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesHdbox - South Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .banner {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: fadeIn 5s ease-in-out infinite alternate;
+        }
+        .animated-text {
+            font-size: 0.9em;
+            color: #ccc;
+            animation: fadeIn 5s ease-in-out infinite alternate;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Status bar */
+        .status-bar {
+            background-color: #222;
+            color: #fff;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+        .status-bar a {
+            color: #00BFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Movie card styling */
+        .movie-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 10px;
+        }
+        .movie-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            width: 500px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .movie-card img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .movie-details {
+            flex: 1;
+        }
+        .movie-title {
+            font-size: 1.1em;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .file-size {
+            font-size: 0.9em;
+            color: #888;
+            margin: 5px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .download-button, .play-online-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            font-size: 0.9em;
+        }
+        .download-button:hover, .play-online-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Telegram icon styling */
+        .telegram-link img {
+            width: 50px;
+            display: block;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (Banner) -->
+    <div class="banner">
+        MoviesHdbox
+        <div class="animated-text">Your Ultimate Movieshdbox - Download and Watch</div>
+    </div>
+
+    <!-- Telegram Link -->
+    <div class="telegram-link">
+        <a href="https://t.me/YourTelegramLink" target="_blank">
+            <img src="https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/png-transparent-telegram-icon-telegram-logo-computer-icons-telegram-blue-angle-triangle-thumbnail.png" alt="Join us on Telegram">
+        </a>
+    </div>
+
+<!-- South Movies Section -->
+<div class="movie-card-container">
+    <!-- Existing Movie Card: Lucky Bhaskar -->
+    <div class="movie-card">
+        <img src="https://raw.githubusercontent.com/virat119/images/refs/heads/main/Lucky_Baskhar_film_poster.jpg" alt="Movie Poster">
+        <div class="movie-details">
+            <div class="movie-title">Lucky Bhaskar Hindi Dubbed</div>
+            <div class="file-size">File Size: 1.57 GB</div>
+            <div class="buttons">
+                <a href="https://mixdrop.is/f/8lrk8z1va3g6l4" class="download-button" target="_blank">Download</a>
+                <button class="play-online-button" onclick="showIframe('iframe-lucky')">Play Online</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Lucky Bhaskar -->
+    <div id="iframe-lucky" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000;">
+        <div style="position:relative; width:80%; margin:auto; top:10%; background-color:white; padding:10px; border-radius:10px;">
+            <button onclick="closeIframe('iframe-lucky')" style="position:absolute; top:10px; right:10px;">Close</button>
+            <iframe width="100%" height="450" src="//mixdrop.is/e/8lrk8z1va3g6l4" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+    </div>
+
+    <!-- New Movie Card: Bagheera -->
+    <div class="movie-card">
+        <img src="https://raw.githubusercontent.com/virat119/images/refs/heads/main/bagheera-2024-et00379650-1727337170.jpg" alt="Bagheera Poster">
+        <div class="movie-details">
+            <div class="movie-title">Bagheera Hindi Dubbed</div>
+            <div class="file-size">File Size: 1.63 GB</div>
+            <div class="buttons">
+                <a href="https://mixdrop.is/f/036g8kj1tggzl6" class="download-button" target="_blank">Download</a>
+                <button class="play-online-button" onclick="showIframe('iframe-bagheera')">Play Online</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Bagheera -->
+    <div id="iframe-bagheera" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000;">
+        <div style="position:relative; width:80%; margin:auto; top:10%; background-color:white; padding:10px; border-radius:10px;">
+            <button onclick="closeIframe('iframe-bagheera')" style="position:absolute; top:10px; right:10px;">Close</button>
+            <iframe width="100%" height="450" src="//mixdrop.is/e/036g8kj1tggzl6" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+    </div>
+
+    <!-- New Movie Card: Kanguwa -->
+    <div class="movie-card">
+        <img src="https://raw.githubusercontent.com/virat119/images/refs/heads/main/download.webp" alt="Kanguwa Poster">
+        <div class="movie-details">
+            <div class="movie-title">Kanguwa HD Hindi</div>
+            <div class="file-size">File Size: 466 MB</div>
+            <div class="buttons">
+                <a href="https://ufile.io/tn33ev1f" class="download-button" target="_blank">Download</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript to show/hide iframe modal -->
+<script>
+    function showIframe(id) {
+        document.getElementById(id).style.display = 'block';
+    }
+
+    function closeIframe(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+</script>
+
+ <!-- Repeat for more movies -->
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <p>© 2024 MoviesHdbox. All rights reserved. For DMCA inquiries, contact <a href="mailto:bablukharwar69@gmail.com">bablukharwar69@gmail.com</a>.</p>
+        <p>Contact us on Telegram for more updates and queries.</p>
+    </div>
+</body>
+</html>
