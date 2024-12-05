@@ -1,182 +1,198 @@
-<style>
-        /* General Styles */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #ffffff;
-            color: #333;
-            overflow-x: hidden;
-        }
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
 
-        /* Header (Banner) */
-        .banner {
-            background: linear-gradient(135deg, #1e90ff, #ff6f61);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 36px;
-            font-weight: bold;
-            text-transform: uppercase;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border-bottom: 5px solid #333;
-        }
+/* Header (Banner) */
+.banner {
+    background: linear-gradient(135deg, #1e90ff, #ff6f61);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px; /* Reduced size */
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #333;
+}
 
-        .banner::after {
-            content: 'Your Ultimate Movieshdbox';
-            display: block;
-            font-size: 18px;
-            font-weight: normal;
-            color: #ff6f61;
-            margin-top: 5px;
-            animation: slideUp 2s infinite alternate;
-        }
+.banner::after {
+    content: 'Your Ultimate MoviesHdbox';
+    display: block;
+    font-size: 14px; /* Reduced size */
+    font-weight: normal;
+    color: #ff6f61;
+    margin-top: 5px;
+    animation: slideUp 2s infinite alternate, colorChangeBanner 5s infinite;
+}
 
-        @keyframes slideUp {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
+/* Animation for banner text */
+@keyframes slideUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
 
-        /* Random color text animation */
-        @keyframes colorChange {
-            0% { color: #1e90ff; }
-            20% { color: #ff6f61; }
-            40% { color: #ffb400; }
-            60% { color: #32cd32; }
-            80% { color: #f39c12; }
-            100% { color: #8e44ad; }
-        }
+@keyframes colorChangeBanner {
+    0% { color: #ff6f61; }
+    25% { color: #1e90ff; }
+    50% { color: #ffb400; }
+    75% { color: #32cd32; }
+    100% { color: #8e44ad; }
+}
 
-        .animated-text {
-            font-size: 16px;
-            margin: 15px 0;
-            animation: colorChange 5s infinite;
-            text-align: center;
-        }
+/* Random color text animation */
+@keyframes colorChange {
+    0% { color: #1e90ff; }
+    20% { color: #ff6f61; }
+    40% { color: #ffb400; }
+    60% { color: #32cd32; }
+    80% { color: #f39c12; }
+    100% { color: #8e44ad; }
+}
 
-        /* Latest Movies Section */
-        .latest-movies {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 20px;
-            gap: 20px;
-            background-color: #f8f8f8;
-        }
+.animated-text {
+    font-size: 16px;
+    margin: 15px 0;
+    animation: colorChange 5s infinite;
+    text-align: center;
+}
 
-        .movie-post {
-            display: flex;
-            align-items: center;
-            background-color: #ffffff;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+/* Latest Movies Section */
+.latest-movies {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f8f8f8;
+}
 
-        .movie-post:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
+.movie-post {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-        .movie-post img {
-            width: 150px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
+.movie-post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 
-        .movie-details {
-            padding: 15px;
-            color: #555;
-            flex: 1;
-            text-align: left;
-        }
+.movie-post img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
 
-        .movie-title {
-            font-size: 16px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-            animation: colorChange 5s infinite alternate;
-        }
+.movie-details {
+    padding: 15px;
+    color: #555;
+    flex: 1;
+    text-align: left;
+}
 
-        .movie-link {
-            display: inline-block;
-            padding: 5px 10px;
-            margin-top: 5px;
-            background: linear-gradient(135deg, #1e90ff, #ff6f61);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            text-align: center;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+.movie-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    animation: colorChange 5s infinite alternate;
+}
 
-        .movie-link:hover {
-            background-color: #333;
-            transform: translateY(-3px);
-        }
+.movie-link {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 5px;
+    background: linear-gradient(135deg, #1e90ff, #ff6f61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-        /* Folder Section */
-        .folder-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            padding: 20px;
-            gap: 15px;
-            background-color: #e9ecef;
-        }
+.movie-link:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+}
 
-        .folder {
-            background-color: #ffffff;
-            color: #333;
-            padding: 10px 15px;
-            border-radius: 8px;
-            cursor: pointer;
-            width: 150px;
-            text-align: left;
-            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            font-size: 14px; /* Slightly larger font size */
-            animation: folderTextChange 8s infinite;
-        }
-..folder {
-            background-color: #ffffff;
-            color: #333;
-            padding: 10px 15px;
-            border-radius: 8px;
-            cursor: pointer;
-            width: 150px;
-            text-align: left;
-            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            font-size: 14px; /* Slightly larger font size */
-            animation: folderTextChange 8s infinite;
-        }
-        @keyframes folderTextChange {
-            0% { content: 'Hollywood Movies'; }
-            12.5% { content: 'Bollywood Movies'; }
-            12.5%% { content: 'South Hindi Dubbed'; }
-            37.5% { content: 'Latest Movies'; }
-            50% { content: 'Action Movies'; }
-            62.5% { content: 'Comedy Movies'; }
-            75% { content: 'Drama Movies'; }
-            87.5% { content: 'Animated Movies'; }
-            100% { content: 'Documentaries'; }
-        }
+/* Folder Section */
+.folder-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 15px;
+    background-color: #e9ecef;
+}
 
-        .folder:hover {
-            background-color: #ddd;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+.folder {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 150px;
+    text-align: left;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px; /* Slightly larger font size */
+    animation: folderTextChange 8s infinite;
+    color: #444; /* Adjusted color */
+}
 
-        .folder::before {
-            content: '📁';
-            margin-right: 8px;
-            font-size: 18px;
-        }
+@keyframes folderTextChange {
+    0% { content: 'Hollywood Movies'; background-color: #d1e7dd; }
+    12.5% { content: 'Bollywood Movies'; background-color: #ffb3b3; }
+    25% { content: 'South Hindi Dubbed'; background-color: #fdfd96; }
+    37.5% { content: 'Latest Movies'; background-color: #add8e6; }
+    50% { content: 'Action Movies'; background-color: #ffb3b3; }
+    62.5% { content: 'Comedy Movies'; background-color: #98fb98; }
+    75% { content: 'Drama Movies'; background-color: #ffe4b5; }
+    87.5% { content: 'Animated Movies'; background-color: #e6e6fa; }
+    100% { content: 'Documentaries'; background-color: #d3d3d3; }
+}
 
-    </style>
+.folder:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.folder::before {
+    content: '📁';
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        font-size: 18px;
+    }
+
+    .banner::after {
+        font-size: 12px;
+    }
+
+    .folder {
+        font-size: 12px;
+        width: 100%; /* Adjust folder size for mobile */
+    }
+
+    .movie-post img {
+        width: 100px;
+        height: 150px;
+    }
+}
