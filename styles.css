@@ -11,14 +11,33 @@ body {
 /* Header (Banner) */
 .banner {
     background: linear-gradient(135deg, #1e90ff, #ff6f61);
+    background-size: 400% 400%; /* Animation effect */
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 24px; /* Reduced size */
+    font-size: 28px; /* Slightly increased size */
     font-weight: bold;
     text-transform: uppercase;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     border-bottom: 5px solid #333;
+    animation: gradientBG 5s ease infinite, textAnimation 1.5s ease-in-out infinite;
+    background-attachment: fixed;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Text animation */
+@keyframes textAnimation {
+    0% { transform: translateY(0); opacity: 1; }
+    25% { transform: translateY(-5px); opacity: 0.8; }
+    50% { transform: translateY(0); opacity: 1; }
+    75% { transform: translateY(5px); opacity: 0.8; }
+    100% { transform: translateY(0); opacity: 1; }
 }
 
 .banner::after {
