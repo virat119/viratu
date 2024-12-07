@@ -221,4 +221,49 @@ body {
             margin: 20px auto;
             cursor: pointer;
         }
+/* CSS for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for the search bar */
+.search-bar {
+    width: 180px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    font-size: 13px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* CSS for the button */
+.search-button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover and focus effects */
+.search-bar:focus {
+    border-color: #4CAF50;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
 }
