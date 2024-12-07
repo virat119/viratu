@@ -214,4 +214,11 @@ body {
         width: 100px;
         height: 150px;
     }
+/* Telegram icon styling */
+        .telegram-link img {
+            width: 200px;
+            display: block;
+            margin: 20px auto;
+            cursor: pointer;
+        }
 }
