@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
 }
 
+
 /* Header (Banner) */
 .banner {
     background: linear-gradient(135deg, #1e90ff, #ff6f61);
@@ -22,7 +23,19 @@ body {
     border-bottom: 5px solid #333;
     animation: gradientBG 5s ease infinite, textAnimation 1.5s ease-in-out infinite;
     background-attachment: fixed;
+    position: relative; /* Required for positioning image */
+    overflow: hidden; /* Prevents image overflow */
 }
+
+/* Banner Image */
+.banner img {
+    max-height: 100px; /* Adjust height to fit within banner */
+    max-width: 100%; /* Ensure image fits the width */
+    display: block; /* Center alignment adjustments */
+    margin: 0 auto; /* Center horizontally */
+    position: relative; /* Keeps it within the banner */
+    }
+
 
 /* Gradient animation */
 @keyframes gradientBG {
