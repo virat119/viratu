@@ -34,7 +34,26 @@ body {
     display: block; /* Center alignment adjustments */
     margin: 0 auto; /* Center horizontally */
     position: relative; /* Keeps it within the banner */
-    }
+    animation: slideImage 3s ease-in-out infinite; /* Slide animation */
+}
+
+/* Animations */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes textAnimation {
+    0%, 100% { letter-spacing: 2px; }
+    50% { letter-spacing: 8px; }
+}
+
+@keyframes slideImage {
+    0% { transform: translateX(-50px); } /* Start from the left */
+    50% { transform: translateX(50px); } /* Move to the right */
+    100% { transform: translateX(-50px); } /* Return to the left */
+}
 
 
 /* Gradient animation */
