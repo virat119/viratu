@@ -4,36 +4,41 @@
     background: linear-gradient(135deg, #1e90ff, #ff6f61);
     background-size: 400% 400%; /* Animation effect */
     color: white;
-    padding: 30px; /* Adjusted padding */
+    padding: 30px; /* Increased padding */
     text-align: center;
-    font-size: 36px; /* Larger font size */
+    font-size: 2rem; /* Larger font size */
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     border-bottom: 5px solid #333;
-    animation: gradientBG 5s ease infinite, textAnimation 3s ease-in-out infinite;
+    animation: gradientBG 5s ease infinite;
     background-attachment: fixed;
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow: hidden; /* Prevents horizontal overflow */
+    position: relative; /* Ensure text stays in one place */
 }
 
-/* Smooth and controlled animation for banner text */
-@keyframes textAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    50% {
-        opacity: 0.5;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Logo styling */
+.banner-logo {
+    display: block;
+    max-width: 80%; /* Adjusted to make logo more prominent */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Centers the logo */
+    margin-bottom: 15px; /* Adds space below the logo */
 }
 
+/* Text styling */
+.banner-text {
+    position: relative; /* Positioned below the logo */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-size: 2rem; /* Adjusted font size */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for better visibility */
+}
+
+/* Random color animation */
 @keyframes colorShift {
     0% { color: #FF0000; }
     20% { color: #FF7F00; }
@@ -43,52 +48,26 @@
     100% { color: #FF00FF; }
 }
 
-.banner h1 {
-    animation: colorShift 15s infinite alternate; /* Slower color shift */
-}
-
-/* Folder Emojis with Names */
-.folder-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.folder {
-    display: flex;
-    align-items: center;
-    font-size: 2em; /* Reduced size */
-    margin: 10px;
-    color: #333;
-    animation: bounce 1s infinite;
-}
-
-.folder-name {
-    font-size: 1em; /* Smaller text for folder names */
-    margin-left: 10px;
-    color: #555;
-    animation: colorChange 6s infinite alternate; /* Random color animation */
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner {
+        padding: 20px; /* Reduced padding */
+        font-size: 1.5rem; /* Smaller font size */
     }
-    50% {
-        transform: translateY(-10px);
+    .banner-text {
+        font-size: 1.5rem; /* Adjusted font size */
     }
 }
 
-@keyframes colorChange {
-    0% { color: #FF0000; }
-    20% { color: #FF7F00; }
-    40% { color: #FFFF00; }
-    60% { color: #00FF00; }
-    80% { color: #00FFFF; }
-    100% { color: #FF00FF; }
+@media (max-width: 480px) {
+    .banner {
+        padding: 15px; /* Further reduced padding */
+        font-size: 1.2rem; /* Smaller font size */
+    }
+    .banner-text {
+        font-size: 1.2rem; /* Smaller font size for small screens */
+    }
 }
-
 /* Latest Movies Section */
 .latest-movies {
     display: flex;
@@ -132,10 +111,20 @@
 .movie-title {
     font-size: 16px; /* Smaller font size */
     font-weight: bold;
-    color: #333;
+    color: #333; /* Default color */
     margin-bottom: 10px;
+    animation: colorChange 5s infinite alternate; /* Color change animation */
 }
 
+/* Keyframe for random color animation */
+@keyframes colorChange {
+    0% { color: #FF0000; } /* Red */
+    20% { color: #FF7F00; } /* Orange */
+    40% { color: #FFFF00; } /* Yellow */
+    60% { color: #00FF00; } /* Green */
+    80% { color: #00FFFF; } /* Cyan */
+    100% { color: #FF00FF; } /* Magenta */
+}
 .movie-link {
     display: inline-block;
     padding: 10px 15px;
@@ -186,23 +175,19 @@ body {
 }
 
 /* Telegram Icon Styling */
+.telegram-link {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
 .telegram-link img {
-    width: 200px;
-    display: block;
-    margin: 20px auto;
+    width: 200px; /* Set the desired width */
     cursor: pointer;
+    max-width: 100%; /* Ensure it scales on smaller screens */
+    height: auto; /* Maintain aspect ratio */
 }
-
-/* Banner Image */
-.banner img {
-    max-height: 100px; /* Adjust height to fit within banner */
-    max-width: 100%; /* Ensure image fits the width */
-    display: block; /* Center alignment adjustments */
-    margin: 0 auto; /* Center horizontally */
-    position: relative; /* Keeps it within the banner */
-    animation: slideImage 3s ease-in-out infinite; /* Slide animation */
-}
-
 /* Search Container */
 .search-container {
     display: flex;
@@ -377,4 +362,3 @@ body {
     .slider {
         animation: slide 10s linear infinite; /* Faster animation for small devices */
     }
-
