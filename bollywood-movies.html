@@ -6,254 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MoviesHDBOX - Bollywood Movies | Latest Hindi Films</title>
 <meta name="description" content="Find the latest Bollywood movies, including action, romance, and drama films. Watch the biggest Hindi hits on MoviesHDBOX.">
-    <script src="https://alwingulla.com/88/tag.min.js" data-zone="117038" async data-cfasync="false"></script>
+
 
     
     
-    <style>
-        /* Basic Styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-.banner {
-    background: #8e44ad; /* Solid purple background */
-    color: #fff; /* Default text color */
-    padding: 20px 40px; /* Adequate padding */
-    text-align: center;
-    font-size: 1.5em; /* Increased font size */
-    font-weight: bold;
-    margin-bottom: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
-    animation: fadeIn 9s ease-in-out infinite alternate, glow 1.5s ease-in-out infinite alternate, textColorChange 8s linear infinite;
-}
+<style>
+    /* Basic Styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
 
-/* Animation for fade-in effect */
-@keyframes fadeIn {
-    0% {
-        opacity: 0.5;
+    .banner {
+        background: #8e44ad;
+        color: #fff;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 9s ease-in-out infinite alternate, glow 1.5s ease-in-out infinite alternate, textColorChange 8s linear infinite;
     }
-    100% {
-        opacity: 1;
-    }
-}
 
-/* Animation for glow effect */
-@keyframes glow {
-    0% {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    @keyframes fadeIn {
+        0% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    100% {
-        box-shadow: 0 8px 18px rgba(255, 255, 255, 0.6); /* White glow */
-    }
-}
 
-/* Animation for text color change */
-@keyframes textColorChange {
-    0% {
-        color: #ff6347; /* Tomato Red */
-    }
-    10% {
-        color: #ff4500; /* Orange Red */
-    }
-    20% {
-        color: #32cd32; /* Lime Green */
-    }
-    30% {
-        color: #1e90ff; /* Dodger Blue */
-    }
-    40% {
-        color: #ff1493; /* Deep Pink */
-    }
-    50% {
-        color: #ffff00; /* Yellow */
-    }
-    60% {
-        color: #8a2be2; /* Blue Violet */
-    }
-    70% {
-        color: #00fa9a; /* Medium Spring Green */
-    }
-    80% {
-        color: #ff69b4; /* Hot Pink */
-    }
-    90% {
-        color: #d2691e; /* Chocolate */
-    }
-    100% {
-        color: #f4a460; /* Sandy Brown */
-    }
-}
-        .animated-text {
-            font-size: 0.9em;
-            color: #ccc;
-            animation: fadeIn 5s ease-in-out infinite alternate;
+    @keyframes glow {
+        0% {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
-        @keyframes fadeIn {
-            0% { opacity: 0.5; }
-            100% { opacity: 1; }
+        100% {
+            box-shadow: 0 8px 18px rgba(255, 255, 255, 0.5);
         }
+    }
 
-        /* Status bar */
-        .status-bar {
-            background-color: #222;
-            color: #fff;
-            padding: 5px 10px;
-            text-align: center;
-            font-size: 0.8em;
+    @keyframes textColorChange {
+        0%, 100% {
+            color: #ff6347;
         }
-        .status-bar a {
-            color: #00BFFF;
-            text-decoration: none;
-            font-weight: bold;
+        25% {
+            color: #32cd32;
         }
+        50% {
+            color: #1e90ff;
+        }
+        75% {
+            color: #ff69b4;
+        }
+    }
 
-        /* Movie card styling */
-        .movie-card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-            padding: 10px;
-        }
-        .movie-card {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 10px;
-            width: 500px;
-            background-color: #fff;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .movie-card img {
-            width: 100px;
-            height: auto;
-            border-radius: 8px;
-            margin-right: 15px;
-        }
-        .movie-details {
-            flex: 1;
-        }
-        .movie-title {
-            font-size: 1.1em;
-            margin-top: 5px;
-            font-weight: bold;
-            color: #333;
-        }
-.file-size {
-    font-size: 0.9em;
-    margin: 5px 0;
-    font-weight: bold;
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: colorChange 3s infinite alternate;
-}
+    .status-bar {
+        background-color: #222;
+        color: #fff;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 0.8em;
+    }
 
-/* Keyframes for smooth color animation */
-@keyframes colorChange {
-    0% {
-        background: linear-gradient(90deg, #6a11cb, #2575fc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .status-bar a {
+        color: #00BFFF;
+        text-decoration: none;
+        font-weight: bold;
     }
-    25% {
-        background: linear-gradient(90deg, #00b4db, #0083b0);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    50% {
-        background: linear-gradient(90deg, #fbc2eb, #a18cd1);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    75% {
-        background: linear-gradient(90deg, #f8cdda, #1fd1f9);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    100% {
-        background: linear-gradient(90deg, #a8c0ff, #3f2b96);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-    }
-}
-}
-        }
-     .buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 10px;
-    gap: 10px; /* Added to create space between buttons */
-}
 
-.download-button, .play-online-button {
-    display: inline-block;
-    padding: 8px 16px; /* Slightly increased padding for better appearance */
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    border: none;
-    font-size: 1em; /* Slightly larger font size for better readability */
-    transition: background-color 0.4s, transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    .movie-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
 
-.download-button:hover, .play-online-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05); /* Button expands on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    animation: buttonGlow 1s infinite alternate;
-}
-
-/* Animation for glowing effect */
-@keyframes buttonGlow {
-    0% {
+    .movie-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 8px;
+        width: 95%;
+        max-width: 400px;
+        background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    100% {
+
+    .movie-card img {
+        width: 80px;
+        height: auto;
+        border-radius: 6px;
+        margin-right: 10px;
+    }
+
+    .movie-details {
+        flex: 1;
+    }
+
+    .movie-title {
+        font-size: 1em;
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 5px;
+    }
+
+    .file-size {
+        font-size: 0.8em;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .download-button, .play-online-button {
+        padding: 5px 12px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        border: none;
+        font-size: 0.9em;
+        transition: background-color 0.4s, transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .download-button:hover, .play-online-button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
-}
 
-.download-button {
-    background: linear-gradient(90deg, #007BFF, #00D1FF);
-    color: white;
-    border-radius: 10px;
-}
+    .download-button {
+        background: linear-gradient(90deg, #007BFF, #00D1FF);
+    }
 
-.play-online-button {
-    background: linear-gradient(90deg, #28a745, #20c997);
-    color: white;
-    border-radius: 10px;
-}
+    .play-online-button {
+        background: linear-gradient(90deg, #28a745, #20c997);
+    }
 
-.download-button:hover {
-    background: linear-gradient(90deg, #0056b3, #0084e6);
-}
+    .telegram-link img {
+        width: 180px;
+        display: block;
+        margin: 15px auto;
+        cursor: pointer;
+    }
 
-.play-online-button:hover {
-    background: linear-gradient(90deg, #218838, #1e8e7a);
-}
-        /* Telegram icon styling */
-        .telegram-link img {
-            width: 200px;
-            display: block;
-            margin: 20px auto;
-            cursor: pointer;
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+        .banner {
+            font-size: 1em;
+            padding: 10px 20px;
         }
-    </style>
+
+        .movie-card {
+            max-width: 95%;
+        }
+
+        .movie-card img {
+            width: 70px;
+        }
+
+        .movie-title {
+            font-size: 0.9em;
+        }
+
+        .download-button, .play-online-button {
+            font-size: 0.8em;
+            padding: 4px 10px;
+        }
+    }
+</style>
 </head>
 <body>
 <!-- Header (Banner) -->
