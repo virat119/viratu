@@ -8,7 +8,7 @@ const hollywoodMovies = [
         const bollywoodMovies = [
             { name: "Sabarmati Hindi", url: "bollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/The-Sabarmati-Report-2.jpg" },
             { name: "Bhool Bhulaiya 3 (2024) 720p WEB DL Hindi", url: "bollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/MV5BYzBjYzM3OTctMzc3Yy00ZWQ0LWI2MzMtMGZjMTM4OGU1ZmI0XkEyXkFqcGc%40._V1_QL75_UX248_.jpg" },
-            { name: "Avengers", url: "bollywood-movies.html", poster: "avengers-poster.jpg" }
+            { name: "Singham Again", url: "bollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/images (7).jpeg" }
         ];
 
         const southMovies = [
