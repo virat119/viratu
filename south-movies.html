@@ -1,14 +1,17 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MoviesHDBOX - Latest South Movies | Tamil, Telugu & Kannada Films</title>
-<meta name="description" content="Explore the best South Indian movies, including Tamil, Hindi,Telugu, and Kannada films. Watch the latest South hits on MoviesHDBOX.">
+<meta name="description" content="Watch top South Indian movies in HD. Stream or download Tamil, Telugu, Kannada, and Malayalam films with high-quality video on Movies HD Box.">
+<link rel="canonical" href="https://www.movieshdbox.site/south-movies.html">
+	<title>MoviesHDBOX - Latest South Movies | Tamil, Telugu & Kannada Films</title>
+	
    
+<script src="https://alwingulla.com/88/tag.min.js" data-zone="117038" async data-cfasync="false"></script>
 
-    <script src="https://alwingulla.com/88/tag.min.js" data-zone="117038" async data-cfasync="false"></script>
     
     <style>
         /* Basic Styling */
@@ -112,41 +115,90 @@
             font-weight: bold;
         }
 
-        /* Movie card styling */
-        .movie-card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-            padding: 10px;
-        }
-        .movie-card {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 10px;
-            width: 500px;
-            background-color: #fff;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .movie-card img {
-            width: 100px;
-            height: auto;
-            border-radius: 8px;
-            margin-right: 15px;
-        }
-        .movie-details {
+/* Movie card container styling */
+.movie-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Cards center align */
+    gap: 15px; /* Reduced gap between cards */
+    padding: 20px 10px;
+    background-color: #f5f5f5; /* Subtle light gray background */
+}
+
+/* Movie card styling */
+.movie-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ddd; /* Clean and subtle border */
+    border-radius: 10px; /* Smooth rounded edges */
+    padding: 10px 12px; /* Reduced padding for compact look */
+    width: 400px; /* Optimized width */
+    background-color: #fff; /* White background for clarity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle depth */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.movie-card:hover {
+    transform: scale(1.03); /* Slight scaling on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.movie-card img {
+    width: 90px; /* Slightly reduced size for a balanced look */
+    height: 135px; /* Maintains aspect ratio */
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 8px; /* Smooth rounded corners for image */
+    margin-right: 12px; /* Reduced space between image and text */
+    border: 1px solid #ccc; /* Subtle border for image */
+}
+
+.movie-card h3 {
+    font-size: 1.1em; /* Optimized title size */
+    margin: 0;
+    color: #333; /* Clear and dark text for visibility */
+}
+
+.movie-card p {
+    font-size: 0.9em; /* Compact size for description */
+    color: #555; /* Subtle gray for description text */
+    margin-top: 4px;
+    line-height: 1.3; /* Balanced spacing between lines */
+}
+
+
+
+
+
+
+
+
+
+
+
+.movie-details {
             flex: 1;
         }
-        .movie-title {
-            font-size: 1.1em;
-            margin-top: 5px;
-            font-weight: bold;
-            color: #333;
-        }
+       .movie-title {
+    font-size: 1em; /* Responsive size ke liye standard rakha */
+    margin-top: 5px;
+    font-weight: bold; /* Text ko highlighted banane ke liye */
+    color: #FF0000; /* Vibrant red color */
+    font-family: 'Arial', sans-serif; /* Modern aur clean font */
+    letter-spacing: 0.5px; /* Text ko aur sharp banane ke liye */
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.movie-title:hover {
+    color: #C70039; /* Hover karte hi dark red shade */
+}
+
+@media screen and (max-width: 768px) {
+    .movie-title {
+        font-size: 0.9em; /* Mobile view ke liye chhota size */
+    }
+}
 .file-size {
     font-size: 0.9em;
     margin: 5px 0;
@@ -199,7 +251,7 @@
 
 .download-button, .play-online-button {
     display: inline-block;
-    padding: 8px 16px; /* Slightly increased padding for better appearance */
+    padding: 4px 10px; /* Slightly increased padding for better appearance */
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
