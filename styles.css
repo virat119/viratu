@@ -1,3 +1,4 @@
+
 /* Header (Banner) */
 .banner {
     background: linear-gradient(135deg, #1e90ff, #ff6f61);
@@ -126,19 +127,21 @@
 }
 .movie-link {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 5px 10px; /* Reduced padding for smaller size */
     margin-top: 5px;
-    background: linear-gradient(135deg, #1e90ff, #ff6f61);
+    font-size: 0.9em; /* Slightly smaller text */
+    background: linear-gradient(135deg, #1e90ff, #ff6f61); /* HD-style gradient */
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 3px; /* Sharper edges */
     text-align: center;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ccc; /* Subtle border for a clean look */
 }
 
 .movie-link:hover {
-    background-color: #333;
-    transform: translateY(-3px);
+    background-color: #ff6f61; /* Solid color on hover */
+    transform: translateY(-2px); /* Subtle hover lift */
 }
 
 /* Responsive Design */
@@ -458,3 +461,22 @@ body {
                 max-height: 150px; /* Adjust size for mobile */
             }
         }
+/* DMCA Section Small Text Style */
+.dmca-section {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-size: 0.9em; /* Small text size */
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.dmca-section a {
+    color: #1e90ff; /* Light blue link color */
+    text-decoration: none;
+}
+
+.dmca-section a:hover {
+    color: #ff6f61; /* Orange link on hover */
+}
