@@ -196,8 +196,8 @@ body {
 /* Slider */
 .slider {
     display: flex;
-    width: 100%;
-    animation: slide 15s linear infinite;
+    width: 98%;
+    animation: slide 17s linear infinite;
 }
 
 /* Movie Poster */
@@ -280,7 +280,7 @@ body {
     }
 
     .slider {
-        animation: slide 10s linear infinite; /* Faster animation for small devices */
+        animation: slide 15s linear infinite; /* Faster animation for small devices */
     }
     
     body {
