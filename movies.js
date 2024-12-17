@@ -2,7 +2,7 @@
 const hollywoodMovies = [
             { name: "Red One Hindi Dubbed(2024) 1080p HD.mkv", url: "hollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/download (1).webp" },
             { name: "Deadpool & Wolverine (2024) 1080p HD.mkv", url: "hollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/696_resize2x_230x300.webp" },
-            { name: "Kabir Singh", url: "hollywood-movies.html", poster: "kabir-singh-poster.jpg" }
+            { name: "Anora", url: "hollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/mbZQsj9e5MmxLWsHdyew7di30aM.webp" }
         ];
 
         const bollywoodMovies = [
