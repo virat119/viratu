@@ -19,7 +19,16 @@ const hollywoodMovies = [
             { name: "Devara part1 hindi", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/628_resize2x_230x300.webp" },
             { name: "Martin hindi", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/MV5BZjY3MTk3YzQtYjBhMC00N2FkLThiOTMtOWI2NmIxMDFhMDZhXkEyXkFqcGc@._V1_QL75_UX1640_.jpg" },
             { name: "RRR", url: "south-movies.html", poster: "rrr-poster.jpg" }
+      { name: "Marco", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/images (8).jpeg" }
+        
+        
+        
+        
+        
         ];
+
+
+
 
         function searchMovies() {
             const query = document.querySelector('.search-bar').value.trim().toLowerCase();
