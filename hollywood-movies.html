@@ -305,10 +305,31 @@
         }
    
 
+
 body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+        }
+
+        /* Main Content Styles */
+        .content {
+            padding: 20px;
+            height: 2000px; /* To allow scrolling */
+        }
+
+        .content h1 {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+            color: #555;
         }
 
         footer {
@@ -318,8 +339,14 @@ body {
             padding: 10px 0;
             font-size: 14px;
             position: fixed;
-            bottom: 0;
+            bottom: -100px; /* Initially hidden */
             width: 100%;
+            left: 0;
+            transition: bottom 0.3s ease; /* Smooth transition for the footer */
+        }
+
+        footer.show {
+            bottom: 0; /* Footer will slide up when the user scrolls to the bottom */
         }
 
         footer a {
@@ -343,9 +370,7 @@ body {
                 font-size: 12px;
                 margin: 0 8px;
             }
-        }
-
-
+		}
 
 </style>
 </head>
@@ -481,21 +506,27 @@ body {
      <!-- Repeat for more movies -->
     </div>
 
-    <!-- Status Bar -->
-    <div class="status-bar">
-        <p>© 2024 MoviesHdbox. All rights reserved. For DMCA inquiries, contact <a href="mailto:bablukharwar69@gmail.com">bablukharwar69@gmail.com</a>.</p>
-        <p>Contact us on Telegram for more updates and queries.</p>
-   
-    <!-- Footer section with text links -->
+    <!-- Footer Section -->
     <footer>
         <a href="https://www.movieshdbox.site/index.html">Home</a>
         <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
         <a href="https://www.movieshdbox.site/south-movies.html">South</a>
         <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
         <a href="https://www.movieshdbox.site/English-movies.html">English</a>
+        <a href="https://www.movieshdbox.site/dmca.html">DMCA</a> <!-- DMCA Link -->
     </footer>
-    
-    </div>
+
+    <!-- Add this script just before the closing body tag -->
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.querySelector('footer');
+            if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+                footer.classList.add('show'); // Footer will smoothly appear
+            } else {
+                footer.classList.remove('show'); // Footer will smoothly hide
+            }
+        });
+    </script>
 </body>
 </html>
 
