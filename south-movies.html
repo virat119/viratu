@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +8,8 @@
 <link rel="canonical" href="https://www.movieshdbox.site/south-movies.html">
 	<title>MoviesHDBOX - Latest South Movies | Tamil, Telugu & Kannada Films</title>
 	
-   
-<script src="https://alwingulla.com/88/tag.min.js" data-zone="117038" async data-cfasync="false"></script>
+  <script src="https://alwingulla.com/88/tag.min.js" data-zone="117038" async data-cfasync="false"></script>
+
 
     
     <style>
@@ -101,19 +100,6 @@
             100% { opacity: 1; }
         }
 
-        /* Status bar */
-        .status-bar {
-            background-color: #222;
-            color: #fff;
-            padding: 5px 10px;
-            text-align: center;
-            font-size: 0.8em;
-        }
-        .status-bar a {
-            color: #00BFFF;
-            text-decoration: none;
-            font-weight: bold;
-        }
 
 /* Movie card container styling */
 .movie-card-container {
@@ -306,50 +292,58 @@
             cursor: pointer;
         }
    
-    
-    body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+/* Footer Styling */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+        opacity: 0; /* Initially hidden */
+        transform: translateY(100%); /* Slide out of view */
+        transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
+    }
 
+    footer.show {
+        opacity: 1; /* Make visible */
+        transform: translateY(0); /* Slide into view */
+    }
+
+    footer a {
+        color: #f1c40f;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
         footer {
-            background-color: #333;
-            text-align: center;
-            color: white;
             padding: 10px 0;
-            font-size: 14px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 12px;
         }
 
         footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 14px;
+            font-size: 12px;
+            margin: 0 8px;
         }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 600px) {
-            footer {
-                font-size: 12px;
-                padding: 8px 0;
-            }
-
-            footer a {
-                font-size: 12px;
-                margin: 0 8px;
-            }
-        }
+    }
     
     
-    
-    </style>
+  
+
+  </style>
 </head>
 <body>
     <!-- Header (Banner) -->
@@ -522,22 +516,28 @@
  <!-- Repeat for more movies -->
     </div>
 
-    <!-- Status Bar -->
-    <div class="status-bar">
-        <p>© 2024 MoviesHdbox. All rights reserved. For DMCA inquiries, contact <a href="mailto:bablukharwar69@gmail.com">bablukharwar69@gmail.com</a>.</p>
+<!-- Footer Section -->
+<footer id="dynamicFooter">
+    <a href="https://www.movieshdbox.site/index.html">Home</a>
+    <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
+    <a href="https://www.movieshdbox.site/south-movies.html">South</a>
+    <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
+    <a href="https://www.movieshdbox.site/English-movies.html">English</a>
+    <a href="https://www.movieshdbox.site/dmca.html">DMCA</a>
+</footer>
+   <script>
+    // Show footer when the user scrolls to the bottom
+    window.addEventListener('scroll', function () {
+        var footer = document.getElementById('dynamicFooter');
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
+            footer.classList.add('show'); // Show footer
+        } else {
+            footer.classList.remove('show'); // Hide footer
+        }
+    });
+</script>
+
+ 
     
-	    <p>Contact us on Telegram for more updates and queries.</p>
-   
-    
-    <!-- Footer section with text links -->
-    <footer>
-        <a href="https://www.movieshdbox.site/index.html">Home</a>
-        <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
-        <a href="https://www.movieshdbox.site/south-movies.html">South</a>
-        <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
-        <a href="https://www.movieshdbox.site/English-movies.html">English</a>
-    </footer>
-    
-    </div>
 </body>
         </html>
