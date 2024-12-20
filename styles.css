@@ -480,3 +480,48 @@ body {
 .dmca-section a:hover {
     color: #ff6f61; /* Orange link on hover */
 }
+
+    /* Global reset and body styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;  /* Dark background */
+            text-align: center;      /* Center the text */
+            color: white;            /* White text color */
+            padding: 10px 0;         /* Padding for space */
+            font-size: 14px;         /* Small text size */
+        }
+
+        /* Footer links style */
+        footer a {
+            color: white;            /* White color for links */
+            text-decoration: none;   /* Remove underline */
+            margin: 0 10px;          /* Space between links */
+            font-size: 14px;         /* Font size for links */
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Underline effect on hover */
+        }
+
+        /* Responsive design for mobile and tablet */
+        @media (max-width: 600px) {
+            footer {
+                font-size: 12px;  /* Smaller font size for mobile */
+                padding: 8px 0;    /* Adjust padding for small screens */
+            }
+
+            footer a {
+                font-size: 12px;  /* Smaller font size for links */
+                margin: 0 8px;    /* Less margin for mobile */
+            }
+        }
