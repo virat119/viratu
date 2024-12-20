@@ -421,14 +421,26 @@
     </a>
 </div>
 <div class="separator"></div>
-<footer>
-    <a href="https://www.movieshdbox.site/index.html">Home</a>
-    <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
-    <a href="https://www.movieshdbox.site/south-movies.html">South</a>
-    <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
-    <a href="https://www.movieshdbox.site/English-movies.html">English</a>
-    <a href="https://www.movieshdbox.site/dmca.html">DMCA</a> <!-- DMCA Link -->
-</footer>
+<!-- Footer Section -->
+    <footer>
+        <a href="https://www.movieshdbox.site/index.html">Home</a>
+        <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
+        <a href="https://www.movieshdbox.site/south-movies.html">South</a>
+        <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
+        <a href="https://www.movieshdbox.site/English-movies.html">English</a>
+        <a href="https://www.movieshdbox.site/dmca.html">DMCA</a> <!-- DMCA Link -->
+    </footer>
+
+    <!-- Add this script just before the closing body tag -->
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.querySelector('footer');
+            if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+                footer.classList.add('show'); // Footer will smoothly appear
+            } else {
+                footer.classList.remove('show'); // Footer will smoothly hide
+            }
+        });
 
 </body>
 </html>
