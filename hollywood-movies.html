@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +8,8 @@
 	<link rel="canonical" href="https://www.movieshdbox.site/hollywood-movies.html">
 <title>MoviesHDBOX - Hollywood Movies | Latest English Blockbusters</title>
 	
+<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://shebudriftaiter.net/tag.min.js',8624331,document.body||document.documentElement)</script>
 
-<script src="https://alwingulla.com/88/tag.min.js" data-zone="117038" async data-cfasync="false"></script>
 <style>
 /* Basic Styling */
         body {
@@ -312,10 +311,10 @@ body {
             padding: 0;
         }
 
-        /* Main Content Styles */
+        /* Content Styling */
         .content {
             padding: 20px;
-            height: 2000px; /* To allow scrolling */
+            min-height: 2000px; /* For scrolling effect */
         }
 
         .content h1 {
@@ -325,28 +324,26 @@ body {
             color: #333;
         }
 
-        .content p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 20px 0;
-            color: #555;
-        }
-
+        /* Footer Styling */
         footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
             background-color: #333;
-            text-align: center;
             color: white;
+            text-align: center;
             padding: 10px 0;
             font-size: 14px;
-            position: fixed;
-            bottom: -100px; /* Initially hidden */
-            width: 100%;
-            left: 0;
-            transition: bottom 0.3s ease; /* Smooth transition for the footer */
+            z-index: 1000;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
 
         footer.show {
-            bottom: 0; /* Footer will slide up when the user scrolls to the bottom */
+            transform: translateY(0);
+            opacity: 1;
         }
 
         footer a {
@@ -370,8 +367,7 @@ body {
                 font-size: 12px;
                 margin: 0 8px;
             }
-		}
-
+        }
 </style>
 </head>
 <body>
@@ -506,27 +502,33 @@ body {
      <!-- Repeat for more movies -->
     </div>
 
-    <!-- Footer Section -->
+<!-- Footer -->
     <footer>
         <a href="https://www.movieshdbox.site/index.html">Home</a>
         <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
         <a href="https://www.movieshdbox.site/south-movies.html">South</a>
         <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
         <a href="https://www.movieshdbox.site/English-movies.html">English</a>
-        <a href="https://www.movieshdbox.site/dmca.html">DMCA</a> <!-- DMCA Link -->
+        <a href="https://www.movieshdbox.site/dmca.html">DMCA</a>
     </footer>
 
-    <!-- Add this script just before the closing body tag -->
+    <!-- JavaScript for Footer Visibility -->
     <script>
-        window.addEventListener('scroll', function() {
-            var footer = document.querySelector('footer');
-            if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
-                footer.classList.add('show'); // Footer will smoothly appear
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('footer');
+
+            if (window.scrollY > lastScrollY) {
+                // User scrolling down, show footer
+                footer.classList.add('show');
             } else {
-                footer.classList.remove('show'); // Footer will smoothly hide
+                // User scrolling up, hide footer
+                footer.classList.remove('show');
             }
+
+            lastScrollY = window.scrollY; // Update scroll position
         });
     </script>
 </body>
 </html>
-
