@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,8 @@
 <meta name="description" content="Discover the best Bollywood movies in HD. Watch the latest Hindi movies and enjoy high-quality streaming or download options on Movies HD Box.">
 <link rel="canonical" href="https://www.movieshdbox.site/bollywood-movies.html">
 	<title>MoviesHDBOX - Bollywood Movies | Latest Hindi Films</title>
-<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://shebudriftaiter.net/tag.min.js',8624331,document.body||document.documentElement)</script>
 
+<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://shebudriftaiter.net/tag.min.js',8624331,document.body||document.documentElement)</script>
     
     <style>
         /* Basic Styling */
@@ -423,29 +424,6 @@
         </div>
     </div>
 
-<!-- New Movie Card:  Devara1 -->
-    <div class="movie-card">
-        <img src="https://raw.githubusercontent.com/virat119/images/refs/heads/main/628_resize2x_230x300.webp" alt="devara Poster">
-        <div class="movie-details">
-            <div class="movie-title">Devara part1 hindi</div>
-            <div class="file-size">File Size: 542.3Mb</div>
-            <div class="buttons">
-                <a href="https://xo.ilink.lol/genxfm784776395159" class="download-button" target="_blank">Download</a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- New Movie Card: Martin -->
-    <div class="movie-card">
-        <img src="https://raw.githubusercontent.com/virat119/images/refs/heads/main/MV5BZjY3MTk3YzQtYjBhMC00N2FkLThiOTMtOWI2NmIxMDFhMDZhXkEyXkFqcGc@._V1_QL75_UX1640_.jpg" alt="devara Poster">
-        <div class="movie-details">
-            <div class="movie-title">Martin  hindi</div>
-            <div class="file-size">File Size: 2.9GB</div>
-            <div class="buttons">
-                <a href="https://xo.ilink.lol/genxfm784776394395" class="download-button" target="_blank">Download</a>
-            </div>
-        </div>
-    </div>
 
 
 
@@ -462,27 +440,34 @@
  <!-- Repeat for more movies -->
     </div>
 
-<!-- Footer Section -->
-<footer id="dynamicFooter">
-    <a href="https://www.movieshdbox.site/index.html">Home</a>
-    <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
-    <a href="https://www.movieshdbox.site/south-movies.html">South</a>
-    <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
-    <a href="https://www.movieshdbox.site/English-movies.html">English</a>
-    <a href="https://www.movieshdbox.site/dmca.html">DMCA</a>
-</footer>
-   <script>
-    // Show footer when the user scrolls to the bottom
-    window.addEventListener('scroll', function () {
-        var footer = document.getElementById('dynamicFooter');
-        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
-            footer.classList.add('show'); // Show footer
-        } else {
-            footer.classList.remove('show'); // Hide footer
-        }
-    });
-</script>
+<!-- Footer -->
+    <footer>
+        <a href="https://www.movieshdbox.site/index.html">Home</a>
+        <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
+        <a href="https://www.movieshdbox.site/south-movies.html">South</a>
+        <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
+        <a href="https://www.movieshdbox.site/English-movies.html">English</a>
+        <a href="https://www.movieshdbox.site/dmca.html">DMCA</a>
+    </footer>
 
+    <!-- JavaScript for Footer Visibility -->
+    <script>
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('footer');
+
+            if (window.scrollY > lastScrollY) {
+                // User scrolling down, show footer
+                footer.classList.add('show');
+            } else {
+                // User scrolling up, hide footer
+                footer.classList.remove('show');
+            }
+
+            lastScrollY = window.scrollY; // Update scroll position
+        });
+    </script>
  
     
 </body>
