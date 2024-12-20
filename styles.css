@@ -461,30 +461,30 @@ body {
                 max-height: 150px; /* Adjust size for mobile */
             }
         }
-/* DMCA Section Small Text Style */
-.dmca-section {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    font-size: 0.9em; /* Small text size */
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 15px;
-}
-
-.dmca-section a {
-    color: #1e90ff; /* Light blue link color */
-    text-decoration: none;
-}
-
-.dmca-section a:hover {
-    color: #ff6f61; /* Orange link on hover */
-}
-
 body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+        }
+
+        /* Main Content Styles */
+        .content {
+            padding: 20px;
+            height: 2000px; /* To allow scrolling */
+        }
+
+        .content h1 {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+            color: #555;
         }
 
         footer {
@@ -494,8 +494,14 @@ body {
             padding: 10px 0;
             font-size: 14px;
             position: fixed;
-            bottom: 0;
+            bottom: -100px; /* Initially hidden */
             width: 100%;
+            left: 0;
+            transition: bottom 0.3s ease; /* Smooth transition for the footer */
+        }
+
+        footer.show {
+            bottom: 0; /* Footer will slide up when the user scrolls to the bottom */
         }
 
         footer a {
