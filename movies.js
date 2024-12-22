@@ -1,72 +1,61 @@
 
-const hollywoodMovies = [
-            { name: "Red One Hindi Dubbed(2024) 1080p HD.mkv", url: "hollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/download (1).webp" },
-            { name: "Deadpool & Wolverine (2024) 1080p HD.mkv", url: "hollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/696_resize2x_230x300.webp" },
-            { name: "Anora", url: "hollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/mbZQsj9e5MmxLWsHdyew7di30aM.webp" }
-        ];
+// Updated movieFolders structure with movies inside folders
+const movieFolders = {
+    "Bollywood": [
+        { name: "Movie 1", url: "movie1.html", poster: "poster1.jpg" },
+        { name: "Movie 2", url: "movie2.html", poster: "poster2.jpg" }
+    ],
+    "South": [
+        { name: "Martin", url: "martin.html", poster: "martin_poster.jpg" },
+        { name: "South Movie 2", url: "southmovie2.html", poster: "southmovie2.jpg" }
+    ],
+    "Hollywood": [
+        { name: "Hollywood Movie 1", url: "hollywoodmovie1.html", poster: "hollywoodmovie1.jpg" },
+        { name: "Hollywood Movie 2", url: "hollywoodmovie2.html", poster: "hollywoodmovie2.jpg" }
+    ],
+    "English": [
+        { name: "English Movie 1", url: "englishmovie1.html", poster: "englishmovie1.jpg" },
+        { name: "English Movie 2", url: "englishmovie2.html", poster: "englishmovie2.jpg" }
+    ]
+};
 
-        const bollywoodMovies = [
-            { name: "Sabarmati Hindi", url: "bollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/The-Sabarmati-Report-2.jpg" },
-            { name: "Bhool Bhulaiya 3 (2024) 720p WEB DL Hindi", url: "bollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/MV5BYzBjYzM3OTctMzc3Yy00ZWQ0LWI2MzMtMGZjMTM4OGU1ZmI0XkEyXkFqcGc%40._V1_QL75_UX248_.jpg" },
-            { name: "Singham Again", url: "bollywood-movies.html", poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/images (7).jpeg" }
-        ];
+function searchMovies() {
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+    const resultsContainer = document.getElementById("results");
+    resultsContainer.innerHTML = ''; // Clear previous results
 
-        const southMovies = [
-            { name: "Lucky Bhaskar Hindi Dubbed", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/Lucky_Baskhar_film_poster.jpg" },
-            { name: "Bagheera Hindi Dubbed", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/bagheera-2024-et00379650-1727337170.jpg" },
-            { name: "Kanguwa HD Hindi", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/download.webp" },
-            { name: "Pushpa Part 2 Hindi Dubbed", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/MV5BZjllNTdiM2QtYjQ0Ni00ZGM1LWFlYmUtNWY0YjMzYWIxOTYxXkEyXkFqcGc%40._V1_QL75_UX328_.jpg" },
-            { name: "Devara part1 hindi", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/628_resize2x_230x300.webp" },
-            { name: "Martin hindi", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/MV5BZjY3MTk3YzQtYjBhMC00N2FkLThiOTMtOWI2NmIxMDFhMDZhXkEyXkFqcGc@._V1_QL75_UX1640_.jpg" },
-            { name: "RRR", url: "south-movies.html", poster: "rrr-poster.jpg" }
-      { name: "Marco", url: "south-movies.html", poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/images (8).jpeg" }
-        
-        
-        
-        
-        
-        ];
+    let foundMovies = [];
 
+    // Loop through each folder and search for matching movies
+    for (const folder in movieFolders) {
+        const folderMovies = movieFolders[folder];
+        const matchedMovies = folderMovies.filter(movie => movie.name.toLowerCase().includes(searchTerm));
 
-
-
-        function searchMovies() {
-            const query = document.querySelector('.search-bar').value.trim().toLowerCase();
-            const resultsDiv = document.getElementById('results');
-            resultsDiv.innerHTML = '';
-
-            if (query === '') {
-                return;
-            }
-
-            let results = [];
-
-            [bollywoodMovies, hollywoodMovies, southMovies].forEach((movieArray) => {
-                movieArray.forEach((movie) => {
-                    if (movie.name.toLowerCase().includes(query)) {
-                        results.push(movie);
-                    }
-                });
+        if (matchedMovies.length > 0) {
+            matchedMovies.forEach(movie => {
+                foundMovies.push(movie);
             });
-
-            if (results.length > 0) {
-                results.forEach((movie) => {
-                    const movieElement = document.createElement('div');
-                    movieElement.className = 'movie';
-                    movieElement.style.marginBottom = '15px';
-                    
-                    movieElement.innerHTML = `
-                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                            <img src="${movie.poster}" alt="${movie.name} poster" style="width: 100px; height: auto; margin-right: 15px; border-radius: 8px;">
-                            <a href="${movie.url}" style="font-size: 18px; text-decoration: none; color: #333; font-weight: bold;">
-                                ${movie.name}
-                            </a>
-                        </div>
-                    `;
-
-                    resultsDiv.appendChild(movieElement);
-                });
-            } else {
-                resultsDiv.innerHTML = '<p style="font-size: 16px; color: #888;">No movies found. Please try a different search term.</p>';
-            }
         }
+    }
+
+    if (foundMovies.length === 0) {
+        resultsContainer.innerHTML = '<p>No movies found.</p>';
+    } else {
+        foundMovies.forEach(movie => {
+            const movieCard = document.createElement("div");
+            movieCard.classList.add("movie-card");
+
+            movieCard.innerHTML = `
+                <img src="${movie.poster}" alt="${movie.name}">
+                <div class="movie-details">
+                    <div class="movie-title">${movie.name}</div>
+                    <div class="buttons">
+                        <a href="${movie.url}" class="watch-button">Watch Now</a>
+                    </div>
+                </div>
+            `;
+
+            resultsContainer.appendChild(movieCard);
+        });
+    }
+                        }
