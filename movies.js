@@ -1,5 +1,5 @@
 function searchMovies() {
-    const searchTerm = document.getElementById("searchInput").value.toLowerCase(); // Get the search term from input
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase().trim(); // Get the search term, trim extra spaces and convert to lowercase
     const resultsContainer = document.getElementById("results"); // Get the results container
     resultsContainer.innerHTML = ''; // Clear previous results
 
@@ -13,7 +13,7 @@ function searchMovies() {
         const movies = folder.querySelectorAll('.movie-card');
         
         movies.forEach(movie => {
-            const movieTitle = movie.querySelector('.movie-title').textContent.toLowerCase();
+            const movieTitle = movie.querySelector('.movie-title').textContent.toLowerCase().trim(); // Clean up movie title (remove spaces, convert to lowercase)
             
             // If movie title matches the search term, add to results
             if (movieTitle.includes(searchTerm)) {
