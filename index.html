@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoviesHdbox - Download and Watch Movies and Series</title>
 <link rel="stylesheet" href="styles.css">
-<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://shebudriftaiter.net/tag.min.js',8624331,document.body||document.documentElement)</script>
-    
+	
+  
     
     <!-- Meta Description -->
     <meta name="description" content="MoviesHdbox - Aapka ultimate destination Hollywood, Bollywood, aur South Indian movies aur series ko download karne aur dekhne ke liye. High-quality downloads aur streaming options available hain.">
@@ -79,6 +78,14 @@
 </div>
 
 
+<!-- Sliding text section -->
+    <div class="sliding-text-container">
+        <div class="sliding-text">
+            WELCOME TO HDBOXMOVIES SITE. ENJOY YOUR DAY WATCH & DOWNLOAD SERIES MOVIES. 
+            KRIPIYA SABHI FOLDER K UNDER SE MOVIES WAGERA DOWNLOAD KARE OR ALL LINK CHECK KARLE. 
+            KOI LINK EXPIRE V HO SAKTE HAI. THANK YOU.
+        </div>
+    </div>
 
 
 <!-- Slider Section -->
@@ -132,15 +139,14 @@
 
 
 
-  <!-- Search bar container -->
-    <div class="search-container">
-        <input type="text" class="search-bar" placeholder="Search for a movie..." />
-        <button class="search-button" onclick="searchMovies()">Search</button>
-    </div>
+<!-- Search bar container -->
+<div class="search-container">
+    <input type="text" class="search-bar" id="searchInput" placeholder="Search for a movie..." />
+    <button class="search-button" onclick="searchMovies()">Search</button>
+</div>
 
-    <!-- Results container -->
-    <div id="results"></div>
-
+<!-- Search Results (Movie Cards) -->
+<div id="results" class="movie-card-container"></div>
     <!-- Link to external JavaScript file -->
     <script src="movies.js"></script>
     
@@ -407,38 +413,39 @@
 
 
 
-   <!-- Folder 1 -->
-<div class="folder">
-<a href="bollywood-movies.html" target="_blank">
-        <span>📁 Bollywood Movies</span>
-    </a>
-</div>
-<div class="separator"></div>
+<div class="folder-container">
+        <!-- Folder 1 -->
+        <div class="folder">
+            <a href="bollywood-movies.html" target="_blank">
+                <span class="folder-icon">📂</span>
+                <span class="folder-name">Bollywood Movies</span>
+            </a>
+        </div>
 
-<!-- Folder 2 -->
-<div class="folder">
-<a href="south-movies.html" target="_blank">
-        <span>📁 South Movies</span>
-    </a>
-</div>
-<div class="separator"></div>
+        <!-- Folder 2 -->
+        <div class="folder">
+            <a href="south-movies.html" target="_blank">
+                <span class="folder-icon">📂</span>
+                <span class="folder-name">South Movies</span>
+            </a>
+        </div>
 
-<!-- Folder 3 -->
-<div class="folder">
-<a href="hollywood-movies.html" target="_blank">
-        <span>📁 Hollywood Movies</span>
-    </a>
-</div>
-<div class="separator"></div>
+        <!-- Folder 3 -->
+        <div class="folder">
+            <a href="hollywood-movies.html" target="_blank">
+                <span class="folder-icon">📂</span>
+                <span class="folder-name">Hollywood Movies</span>
+            </a>
+        </div>
 
-<!-- Folder 4 -->
-<div class="folder">
-  <a href="English-movies.html" target="_blank">
-        <span>📁 English Hollywood Movies</span>
-    </a>
-</div>
-<div class="separator"></div>
-
+        <!-- Folder 4 -->
+        <div class="folder">
+            <a href="English-movies.html" target="_blank">
+                <span class="folder-icon">📂</span>
+                <span class="folder-name">English Movies</span>
+            </a>
+        </div>
+    
     <!-- Footer Section -->
     <footer>
         <a href="https://www.movieshdbox.site/index.html">Home</a>
@@ -462,4 +469,3 @@
     </script>
 </body>
 </html>
-
