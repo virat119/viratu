@@ -341,7 +341,54 @@
     }
     
     
-  
+  .additional-links {
+            display: none; /* Hide initially */
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-links label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .additional-links a {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .additional-links a:hover {
+            background-color: #0056b3;
+        }
+
+        .check-all-links {
+            display: block;
+            margin-top: 15px;
+            text-decoration: underline;
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .check-all-links:hover {
+            color: #0056b3;
+        }
+
+        .check-all-links:active {
+            color: #004085;
+		}
 
   </style>
 </head>
@@ -363,6 +410,37 @@
 <div class="movie-card-container">
     <!-- Existing Movie Card: Lucky Bhaskar -->
    
+	
+	        
+	<!-- Movie Card with Multiple Download Links -->
+    <div class="movie-card">
+        <img src="https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/images (8).jpeg" alt="Red One Poster">
+        <div class="movie-details">
+            <div class="movie-title">Marco 2024  Hindi Dubbed 1080p HD.mkv</div>
+            <div class="file-size">File Size: 2.70GB</div>
+            <div class="buttons">
+                <!-- Single Download Button -->
+                <a href="#" onclick="showAdditionalLinks(event)"class="download-button">Download</a>
+            </div>
+            <!-- Hidden Download Links that will appear after clicking -->
+            <div class="additional-links">
+                <label>Download from Server:</label>
+                <a href="https://v2.filesnap.me/Marco.2024.Hindi.Dubbed.Full.Movie.PreDVD.1080p.KMMOVIES.TOP.mkv?response-content-disposition=attachment;filename=Marco.2024.Hindi.Dubbed.Full.Movie.PreDVD.1080p.KMMOVIES.TOP.mkv" target="_blank">Server 1</a>
+                <a href="https://skydrop.live/khatrimain/id/?file=AGLqbgRKUa3gK23fZMaY-wzbPFNtm0U0UZxnc_arsN5M_T5tdjRic8RL2BNzFdBLJpbKRcrhu8NpvUnCdu892XGsxcpS1Sx0cw" target="_blank">Server 2</a>
+        <a href="https://mxdrop.to/f/el8vvg61ipepjp" target="_blank">Server 3</a>
+                
+        
+              
+		    
+		    <span class="check-all-links" onclick="checkAllLinks()">Check All Links</span>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+	
 	
 	<div class="movie-card">
         <img src="https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/images (8).jpeg" alt="Movie Poster">
@@ -537,7 +615,7 @@
     });
 </script>
 
- 
+ <script src="show.js"></script>
     
 </body>
         </html>
