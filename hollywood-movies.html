@@ -504,16 +504,26 @@ body {
 
 
         
-      <div class="movie-card">
-            <img src=" https://raw.githubusercontent.com/virat119/images/refs/heads/main/download (1).webp" alt="Red One Poster">
-            <div class="movie-details">
-                <div class="movie-title">Red one  Hindi Dubbed(2024) 1080p HD.mkv</div>
-                <div class="file-size">File Size: 2.4GB</div>
-                <div class="buttons">
-                    <a href="https://fastdl.bar/dl/dffa3d" class="download-button">Download</a>
-                </div>
+      <!-- Movie Card with Multiple Download Links -->
+    <div class="movie-card">
+        <img src="https://raw.githubusercontent.com/virat119/images/refs/heads/main/download%20(1).webp" alt="Red One Poster">
+        <div class="movie-details">
+            <div class="movie-title">Red One Hindi Dubbed (2024) 1080p HD.mkv</div>
+            <div class="file-size">File Size: 2.62GB</div>
+            <div class="buttons">
+                <!-- Single Download Button -->
+                <a href="#" onclick="showAdditionalLinks(event)"class="download-button">Download</a>
             </div>
-      </div>
+            <!-- Hidden Download Links that will appear after clicking -->
+            <div class="additional-links">
+                <label>Download from Server:</label>
+                <a href="https://fastdl.bar/dl/fc0808" target="_blank">Server 1</a>
+                <a href="https://mxdrop.to/f/owqjolorh7lz08" target="_blank">Server 2</a>
+        
+                <span class="check-all-links" onclick="checkAllLinks()">Check All Links</span>
+            </div>
+        </div>
+    </div>
    
 
 
@@ -566,5 +576,9 @@ body {
             lastScrollY = window.scrollY; // Update scroll position
         });
     </script>
+
+
+
+<script src="show.js"></script>
 </body>
 </html>
