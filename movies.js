@@ -1,6 +1,5 @@
-
 function searchMovies() {
-    const searchTerm = document.getElementById("searchInput").value.toLowerCase().trim(); // Get the search term from input and remove extra spaces
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase(); // Get the search term from input
     const resultsContainer = document.getElementById("results"); // Get the results container
     resultsContainer.innerHTML = ''; // Clear previous results
 
@@ -9,28 +8,26 @@ function searchMovies() {
 
     let foundMovies = [];
     
-    // Loop through each folder
+    // Loop through each folder to check for movie name match
     folders.forEach(folder => {
         const movies = folder.querySelectorAll('.movie-card');
         
-        // Loop through each movie in the folder
         movies.forEach(movie => {
-            const movieTitle = movie.querySelector('.movie-title').textContent.toLowerCase().trim(); // Get the movie title and normalize it
-            const movieCard = movie; // The movie card itself
-
-            // Check if the movie title contains the search term
+            const movieTitle = movie.querySelector('.movie-title').textContent.toLowerCase();
+            
+            // If movie title matches the search term, add to results
             if (movieTitle.includes(searchTerm)) {
-                foundMovies.push(movieCard.cloneNode(true)); // If matched, add to the results
+                foundMovies.push(movie.cloneNode(true)); // Clone matched movie and add to results array
             }
         });
     });
 
     // Display search results
     if (foundMovies.length === 0) {
-        resultsContainer.innerHTML = '<p>No movies found.</p>';
+        resultsContainer.innerHTML = '<p>No movies found. Please try a different search.</p>';
     } else {
         foundMovies.forEach(movie => {
-            resultsContainer.appendChild(movie); // Add matched movies to the results container
+            resultsContainer.appendChild(movie); // Add each matched movie to the results container
         });
     }
 }
