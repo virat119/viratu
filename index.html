@@ -137,7 +137,7 @@
     </div>
 
 
-
+<div class="search-container">
  <input type="text" id="search-input" placeholder="Search for a movie">
     <button onclick="searchMovies()">Search</button>
 
@@ -147,7 +147,7 @@
         // JavaScript to search movies using Flask API
         function searchMovies() {
             var query = document.getElementById('search-input').value;  // Search query input field
-            var apiUrl = "http://127.0.0.1:5000/search?query=" + query;  // Flask API URL
+            var apiUrl = "https://supreme-sturgeon-accountant-0629f037.koyeb.app/search?query=" + query;  // Flask API URL
 
             fetch(apiUrl)
                 .then(response => response.json())
