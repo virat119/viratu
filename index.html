@@ -137,50 +137,6 @@
     </div>
 
 
-<div class="search-container">
- <input type="text" id="search-input" placeholder="Search for a movie">
-    <button onclick="searchMovies()">Search</button>
-
-    <div id="movie-results"></div>
-
-    <script>
-        // JavaScript to search movies using Flask API
-        function searchMovies() {
-            var query = document.getElementById('search-input').value;  // Search query input field
-            var apiUrl = "https://supreme-sturgeon-accountant-0629f037.koyeb.app/search?query=" + query;  // Flask API URL
-
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    displayMovies(data);  // Function to display movie results
-                })
-                .catch(error => {
-                    console.log('Error:', error);
-                });
-        }
-
-        // Function to display movies in HTML
-        function displayMovies(movies) {
-            const resultsContainer = document.getElementById('movie-results');
-            resultsContainer.innerHTML = '';  // Clear previous results
-
-            if (movies.length === 0) {
-                resultsContainer.innerHTML = '<p>No movies found.</p>';
-                return;
-            }
-
-            movies.forEach(movie => {
-                const movieElement = document.createElement('div');
-                movieElement.innerHTML = `
-                    <h3>${movie.title}</h3>
-                    <img src="${movie.poster}" alt="${movie.title}" width="150">
-                    <p>${movie.file_size}</p>
-                    <a href="${movie.download_link}" target="_blank">Download</a>
-                `;
-                resultsContainer.appendChild(movieElement);
-            });
-        }
-    </script>
 
 <!-- Telegram Link -->
     <div class="telegram-link">
