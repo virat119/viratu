@@ -1,5 +1,4 @@
 
-
 /* Sliding text container */
         .sliding-text-container {
             width: 100%;
@@ -135,9 +134,8 @@
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
-    gap: 0px; /* Removed gap between movie cards */
+    gap: 12px;
     background-color: #f8f8f8;
-    justify-content: center; /* Center the content */
 }
 
 .movie-post {
@@ -147,11 +145,9 @@
     border: 2px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    width: 100%; /* Make movie post width 100% to avoid any gaps */
-    max-width: 220px; /* Set a max width for each movie card */
+    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    margin-bottom: 15px; /* Add a small bottom margin */
 }
 
 .movie-post:hover {
@@ -160,25 +156,25 @@
 }
 
 .movie-post img {
-    width: 100%;
-    height: 150px; /* Reduce the height of the image */
+    width: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
 }
 
 .movie-details {
-    padding: 10px; /* Reduced padding for smaller size */
+    padding: 15px;
     color: #555;
     flex: 1;
     text-align: left;
 }
 
 .movie-title {
-    font-size: 10px; /* Smaller font size */
+    font-size: 8px; /* Significantly smaller font size */
     font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-    animation: colorChange 5s infinite alternate;
+    color: #333; /* Default color */
+    margin-bottom: 10px;
+    animation: colorChange 5s infinite alternate; /* Color change animation */
 }
 
 /* Keyframe for random color animation */
@@ -195,39 +191,32 @@
     display: inline-block;
     padding: 5px 10px; /* Reduced padding for smaller size */
     margin-top: 5px;
-    font-size: 0.75em; /* Smaller font size for the download button */
-    background: linear-gradient(135deg, #1e90ff, #ff6f61);
+    font-size: 0.7em; /* Even smaller text */
+    background: linear-gradient(135deg, #1e90ff, #ff6f61); /* HD-style gradient */
     color: white;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 3px; /* Sharper edges */
     text-align: center;
     transition: all 0.3s ease-in-out;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* Subtle border for a clean look */
 }
 
 .movie-link:hover {
-    background-color: #ff6f61;
-    transform: translateY(-2px);
+    background-color: #ff6f61; /* Solid color on hover */
+    transform: translateY(-2px); /* Subtle hover lift */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .banner {
+        font-size: 18px;
+    }
+
     .movie-post img {
-        width: 100%;
-        height: 120px; /* Further reduce the height for smaller screens */
-    }
-
-    .movie-title {
-        font-size: 8px; /* Reduce font size for small screens */
-    }
-
-    .movie-link {
-        font-size: 0.7em; /* Smaller button text for small screens */
-        padding: 3px 8px; /* Smaller button padding */
+        width: 100px;
+        height: 150px;
     }
 }
-
-
 
 
 
@@ -363,7 +352,7 @@ body {
  
         /* Container for the Telegram link */
         .telegram-link {
-            margin-top: 30px;
+            margin-top: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -371,9 +360,9 @@ body {
 
         /* Styling for the Telegram image */
         .telegram-link img {
-            width: 200px; /* Adjusted size */
+            width: 150px; /* Adjusted size */
             height: auto; /* Maintain aspect ratio */
-            max-height: 200px; /* Optional, ensures it does not get too big */
+            max-height: 150px; /* Optional, ensures it does not get too big */
             transition: transform 0.3s;
         }
 
@@ -386,7 +375,7 @@ body {
 
             .telegram-link img {
                 width: 150px; /* Adjust size for mobile */
-                max-height: 150px; /* Adjust size for mobile */
+                max-height: 120px; /* Adjust size for mobile */
             }
         }
 
