@@ -145,7 +145,67 @@
         </a>
     </div>
 
+    <!-- Search Bar -->
+<div class="search-container">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search movies..."
+            onkeyup="searchMovies()"
+        />
+    </div>
 
+    <!-- Movies Container -->
+    <div class="movies-container" id="moviesContainer">
+        <!-- Search results will appear here -->
+    </div>
+
+    <script>
+        const pages = [
+            'hollywood-movies.html',
+            'english-movies.html',
+            'south-movies.html',
+            'bollywood-movies.html'
+        ]; // List of movie pages
+
+        let allMovies = []; // Array to store all movies from different pages
+
+        // Function to fetch data from all HTML pages
+        async function loadMovies() {
+            for (let page of pages) {
+                const response = await fetch(page);
+                const html = await response.text();
+
+                // Create a temporary DOM to parse the HTML content
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = html;
+
+                // Extract movie cards
+                const movies = tempDiv.querySelectorAll('.movie-card');
+                movies.forEach(movie => allMovies.push(movie));
+            }
+        }
+
+        // Function to display search results
+        function searchMovies() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const moviesContainer = document.getElementById('moviesContainer');
+
+            // Clear previous results
+            moviesContainer.innerHTML = '';
+
+            // Filter and display movies
+            allMovies.forEach(movie => {
+                const title = movie.querySelector('.movie-title').textContent.toLowerCase();
+                if (title.includes(searchInput)) {
+                    moviesContainer.appendChild(movie.cloneNode(true));
+                }
+            });
+        }
+
+        // Load movies on page load
+        window.onload = loadMovies;
+    </script>
 
 
 
