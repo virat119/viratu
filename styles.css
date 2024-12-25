@@ -1,63 +1,4 @@
 
-/* Sliding text container */
-        .sliding-text-container {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            margin-top: 20px;
-        }
-
-        /* Sliding text with animation */
-        .sliding-text {
-            display: inline-block;
-            font-size: 3.3vw; /* Slightly smaller font size */
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #333; /* Dark base color */
-            white-space: nowrap; /* Prevent text from wrapping */
-            animation: slide 40s linear infinite, colorChange 7s infinite alternate; /* Slower sliding speed and color change speed */
-        }
-
-        /* Sliding animation */
-        @keyframes slide {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        /* Color change animation */
-        @keyframes colorChange {
-            0% { color: #8b0000; } /* Dark red */
-            14% { color: #ff8c00; } /* Dark orange */
-            28% { color: #ffd700; } /* Dark yellow */
-            42% { color: #006400; } /* Dark green */
-            57% { color: #00008b; } /* Dark blue */
-            71% { color: #4b0082; } /* Dark indigo */
-            85% { color: #8b008b; } /* Dark violet */
-            100% { color: #8b0000; } /* Dark red */
-        }
-
-        /* Media Query for Tablets and Mobile */
-        @media (max-width: 768px) {
-            .sliding-text {
-                font-size: 5vw; /* Adjust sliding text size */
-            }
-        }
-
-        /* Media Query for large desktop screens */
-        @media (min-width: 1200px) {
-            .sliding-text {
-                font-size: 18px; /* Fixed size for large screens */
-            }
-        }
-   
-
-
-
-
 
 
 	/* Header (Banner) */
@@ -133,8 +74,8 @@
 .latest-movies {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
-    gap: 12px;
+    padding: 01px;
+    gap: 02px;
     background-color: #f8f8f8;
 }
 
@@ -145,7 +86,7 @@
     border: 2px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    width: 100%;
+    width: 400%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -170,11 +111,11 @@
 }
 
 .movie-title {
-    font-size: 8px; /* Significantly smaller font size */
+    font-size: 02px; /* Significantly smaller font size */
     font-weight: bold;
     color: #333; /* Default color */
-    margin-bottom: 10px;
-    animation: colorChange 5s infinite alternate; /* Color change animation */
+    margin-bottom: 05px;
+    animation: colorChange 10s infinite alternate; /* Color change animation */
 }
 
 /* Keyframe for random color animation */
@@ -191,7 +132,7 @@
     display: inline-block;
     padding: 5px 10px; /* Reduced padding for smaller size */
     margin-top: 5px;
-    font-size: 0.7em; /* Even smaller text */
+    font-size: 0.3em; /* Even smaller text */
     background: linear-gradient(135deg, #1e90ff, #ff6f61); /* HD-style gradient */
     color: white;
     text-decoration: none;
@@ -350,35 +291,7 @@ body {
 
 
  
-        /* Container for the Telegram link */
-        .telegram-link {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Styling for the Telegram image */
-        .telegram-link img {
-            width: 150px; /* Adjusted size */
-            height: auto; /* Maintain aspect ratio */
-            max-height: 150px; /* Optional, ensures it does not get too big */
-            transition: transform 0.3s;
-        }
-
-        /* Telegram image hover effect */
-        .telegram-link img:hover {
-            transform: scale(1.1);
-        }
-
-  
-
-            .telegram-link img {
-                width: 150px; /* Adjust size for mobile */
-                max-height: 120px; /* Adjust size for mobile */
-            }
-        }
-
+     
     
     body {
             font-family: Arial, sans-serif;
@@ -605,7 +518,7 @@ body {
 /* Media Query for Tablets and Mobile */
 @media (max-width: 768px) {
     .hdbox-sliding-text {
-        font-size: 6vw; /* Adjust sliding text size for tablets */
+        font-size: 2vw; /* Adjust sliding text size for tablets */
     }
 }
 
@@ -696,7 +609,7 @@ body {
         }
 
         .movie-title {
-            font-size: 0.95rem;
+            font-size: 0.80rem;
             margin: 10px 0;
             font-weight: bold;
             color: #333;
@@ -718,3 +631,23 @@ body {
                 width: 150px;
             }
         }
+        
+        
+      
+/* Telegram PNG */
+        .telegram-link {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .telegram-link img {
+            width: 150px;
+            border: 2px solid #dd2476;
+            transition: transform 0.3s ease;
+        }
+
+        .telegram-link img:hover {
+            transform: scale(1.1);
+        }
+
+
