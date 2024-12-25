@@ -1,7 +1,5 @@
 
-
-
-	/* Header (Banner) */
+/* Header (Banner) */
 .banner {
     background: linear-gradient(135deg, #1e90ff, #ff6f61);
     background-size: 400% 400%; /* Animation effect */
@@ -609,7 +607,7 @@ body {
         }
 
         .movie-title {
-            font-size: 0.80rem;
+            font-size: 0.70em;
             margin: 10px 0;
             font-weight: bold;
             color: #333;
@@ -648,6 +646,4 @@ body {
 
         .telegram-link img:hover {
             transform: scale(1.1);
-        }
-
-
+}
