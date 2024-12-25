@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
 <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://shebudriftaiter.net/tag.min.js',8624331,document.body||document.documentElement)</script>
     
     <style>
-        /* Basic Styling */
+ /* Basic Styling */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -340,6 +341,54 @@
     }
     
     
+  .additional-links {
+            display: none; /* Hide initially */
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-links label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .additional-links a {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .additional-links a:hover {
+            background-color: #0056b3;
+        }
+
+        .check-all-links {
+            display: block;
+            margin-top: 15px;
+            text-decoration: underline;
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .check-all-links:hover {
+            color: #0056b3;
+        }
+
+        .check-all-links:active {
+            color: #004085;
+		}
   
 
   </style>
@@ -365,18 +414,30 @@
 
    
 	
+
 <div class="movie-card">
-        <img src="https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/Download-Baby-John-2024-HDCam-Hindi-ESub-480p-720p-1080p.webp" alt="Sabarmati Poster">
+        <img src="https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/Download-Baby-John-2024-HDCam-Hindi-ESub-480p-720p-1080p.webp" alt="Red One Poster">
         <div class="movie-details">
             <div class="movie-title">Baby John (2024) HDCam [Hindi] ESub 480p 720p 1080p</div>
-            <div class="file-size">Coming Soon</div>
+            <div class="file-size">File Size: 1.2+3.5GB</div>
             <div class="buttons">
-                <a href="#" class="download-button" target="_blank">Download</a>
+                <!-- Single Download Button -->
+                <a href="#" onclick="showAdditionalLinks(event)"class="download-button">Download</a>
+            </div>
+            <!-- Hidden Download Links that will appear after clicking -->
+            <div class="additional-links">
+                <label>Download from Server:</label>
+                <a href="https://tinyurl.com/296qcpvv" target="_blank">720p Server 1</a>
+     
+        <a href="https://tinyurl.com/258ckxwv" target="_blank">1080 Server 2</a>
+                
+        
+              
+		    
+		    <span class="check-all-links" onclick="checkAllLinks()">Check All Links</span>
             </div>
         </div>
     </div>
-	
-	  
 	  
 	  
 	  
@@ -491,6 +552,6 @@
         });
     </script>
  
-    
+    <script src="show.js"></script>
 </body>
         </html>
