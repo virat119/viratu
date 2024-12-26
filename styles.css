@@ -647,3 +647,12 @@ body {
         .telegram-link img:hover {
             transform: scale(1.1);
 }
+
+/* Sliding Info */
+        .site-info {
+            background: linear-gradient(90deg, #ff0066, #6600ff, #00cc99);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 1.1em;
+            color: #fff;
+        }
