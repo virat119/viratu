@@ -470,69 +470,8 @@ body {
 
 
 
-/* Sliding text container */
-.hdbox-sliding-text-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin-top: 30px;
-}
 
-/* Sliding text with animation */
-.hdbox-sliding-text {
-    display: inline-block;
-    font-size: 5vw; /* Responsive font size for smooth scaling */
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #333; /* Dark base color */
-    white-space: nowrap; /* Prevent text from wrapping */
-    animation: slide 40s linear infinite, colorChange 5s infinite alternate; /* Slower sliding speed and color change speed */
-    will-change: transform, color; /* Optimizing for smoother animations */
-    padding-right: 100%; /* Ensure there's space for smooth scrolling */
-}
 
-/* Sliding animation */
-@keyframes slide {
-    0% {
-        transform: translateX(100%); /* Start from the right */
-    }
-    100% {
-        transform: translateX(-100%); /* Move to the left */
-    }
-}
-
-/* Color change animation */
-@keyframes colorChange {
-    0% { color: #8b0000; } /* Dark red */
-    14% { color: #ff8c00; } /* Dark orange */
-    28% { color: #ffd700; } /* Dark yellow */
-    42% { color: #006400; } /* Dark green */
-    57% { color: #00008b; } /* Dark blue */
-    71% { color: #4b0082; } /* Dark indigo */
-    85% { color: #8b008b; } /* Dark violet */
-    100% { color: #8b0000; } /* Dark red */
-}
-
-/* Media Query for Tablets and Mobile */
-@media (max-width: 768px) {
-    .hdbox-sliding-text {
-        font-size: 2vw; /* Adjust sliding text size for tablets */
-    }
-}
-
-/* Media Query for Large Desktop Screens */
-@media (min-width: 1200px) {
-    .hdbox-sliding-text {
-        font-size: 2.5vw; /* Smaller size for large screens */
-    }
-}
-
-/* General Media Query for Smooth Scaling */
-@media (max-width: 480px) {
-    .hdbox-sliding-text {
-        font-size: 7vw; /* Larger text for very small screens */
-    }
-}
 
 
 
