@@ -1,5 +1,5 @@
 
-    // Movie Data
+// Movie Data
         const movies = [
             {
                 title: "Mufasha The Lion king",
@@ -10,17 +10,17 @@
                 downloadUrl: "https://mxdrop.to/f/mkv7e6d1b3xpzw"
             },
             {
-                title: "Movie 2",
-                poster: "https://via.placeholder.com/300x200",
+                title: "Redone",
+                poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/download (1).webp",
                 audio: "English",
                 quality: "Full Hd",
-                watchUrl: "https://www.youtube.com/embed/example2",
+                watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
                 downloadUrl: "#"
             },
             
     {
                 title: "Redone",
-                poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/download (1).webp",
+                poster: "#",
                 audio: "English",
                 quality: "Full Hd",
                 watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
