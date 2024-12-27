@@ -15,11 +15,11 @@ const movies = [
                 quality: "Full HD",
                 watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
                 downloadUrl: "#"
-            },
-            
-      
+            }
+            ];
 
-{
+       [
+            {
                 title: "Mufasha The Lion King",
                 poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/Download-Mufasa-The-Lion-King-Part-2-2024-HDCam-Hindi-Tamil-Telugu-English-ESub-480p-720p-1080p.webp",
                 audio: "ENGLISH",
@@ -35,12 +35,15 @@ const movies = [
                 watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
                 downloadUrl: "#"
             }
+            ];
 
 
 
-];
 
-        // Load Movies
+
+
+
+// Load Movies
         const movieContainer = document.getElementById('movie-container');
 
         movies.forEach(movie => {
