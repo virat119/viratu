@@ -1,4 +1,8 @@
 
+
+
+
+
 /* General Reset */
 body, html {
     margin: 0;
@@ -63,7 +67,7 @@ body, html {
 
 .movie-card {
     background-color: #2a2a2a;
-    width: 90%; /* Adjust card width */
+    width: 100%; /* Adjust card width */
     max-width: 300px; /* Ensure cards are not too wide */
     border-radius: 10px;
     overflow: hidden;
@@ -88,7 +92,7 @@ body, html {
 }
 
 .movie-info {
-    font-size: 0.8em;
+    font-size: 0.6em;
     color: #03A9F4;
     margin: 5px 0;
 }
@@ -100,13 +104,13 @@ body, html {
 }
 
 .btn {
-    padding: 4px 10px;
+    padding: 1px 08px;
     color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .download-btn {
@@ -143,7 +147,7 @@ body, html {
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 10px;
     font-size: 1.5em;
     cursor: pointer;
     color: #fff;
