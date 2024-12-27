@@ -1,8 +1,4 @@
 
-
-
-
-
 /* General Reset */
 body, html {
     margin: 0;
@@ -11,22 +7,23 @@ body, html {
     background-color: #1a1a1a;
     color: #fff;
     height: 100%;
+    box-sizing: border-box;
 }
 
 /* Banner */
 .banner {
     text-align: center;
     background: linear-gradient(90deg, #ff9933, #ff6600);
-    padding: 30px 10px;
+    padding: 20px 10px;
 }
 
 .banner-logo {
-    width: 200px;
-    margin-bottom: 15px;
+    width: 150px; /* Smaller logo for mobile */
+    margin-bottom: 10px;
 }
 
 .banner-text {
-    font-size: 1.2em;
+    font-size: 1em; /* Adjusted font size */
     margin: 0;
     color: #fff;
     font-weight: bold;
@@ -35,20 +32,20 @@ body, html {
 /* Sliding Info */
 .site-info {
     background: linear-gradient(90deg, #ff0066, #6600ff, #00cc99);
-    padding: 10px 0;
+    padding: 8px 0;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 0.9em; /* Smaller text for mobile */
     color: #fff;
 }
 
 /* Telegram Link */
 .telegram-link {
     text-align: center;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .telegram-link img {
-    width: 150px;
+    width: 120px; /* Smaller icon for mobile */
     transition: transform 0.3s;
 }
 
@@ -59,16 +56,16 @@ body, html {
 /* Movie Cards */
 .movie-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
-    gap: 20px; /* Space between cards */
-    padding: 20px;
-    justify-items: center; /* Center-align movie cards */
+    grid-template-columns: repeat(2, 1fr); /* Default: 2 movies per row */
+    gap: 10px; /* Smaller gap for compact view */
+    padding: 10px;
+    justify-items: center; /* Center-align cards */
 }
 
 .movie-card {
     background-color: #2a2a2a;
-    width: 100%; /* Adjust card width */
-    max-width: 300px; /* Ensure cards are not too wide */
+    width: 95%; /* Relative width for better scaling */
+    max-width: 220px; /* Slightly larger cards */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -77,40 +74,40 @@ body, html {
 
 .movie-poster {
     width: 100%;
-    height: 180px;
+    height: 200px; /* Larger height for better visibility */
     object-fit: cover;
 }
 
 .movie-details {
-    padding: 10px;
+    padding: 5px; /* Compact padding */
 }
 
 .movie-title {
-    font-size: 1em;
+    font-size: 0.9em; /* Slightly larger title text */
     color: #ffcc00;
     margin: 5px 0;
 }
 
 .movie-info {
-    font-size: 0.6em;
+    font-size: 0.7em; /* Smaller info text */
     color: #03A9F4;
-    margin: 5px 0;
+    margin: 3px 0;
 }
 
 .movie-actions {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 5px; /* Reduced button padding */
 }
 
 .btn {
-    padding: 1px 08px;
+    padding: 4px 10px; /* Slightly larger buttons */
+    font-size: 0.8em; /* Larger button text */
     color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.8em;
 }
 
 .download-btn {
@@ -119,6 +116,62 @@ body, html {
 
 .watch-btn {
     background-color: #00cc44;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .movie-container {
+        grid-template-columns: repeat(2, 1fr); /* Two movies per row */
+    }
+
+    .movie-card {
+        width: 90%; /* Slightly larger for better readability */
+        max-width: 180px; /* More compact cards */
+    }
+
+    .movie-poster {
+        height: 160px; /* Adjusted height */
+    }
+
+    .movie-title {
+        font-size: 0.8em; /* Smaller title text */
+    }
+
+    .movie-info {
+        font-size: 0.7em; /* Smaller info text */
+    }
+
+    .btn {
+        padding: 3px 8px; /* Smaller buttons */
+        font-size: 0.7em; /* Smaller button text */
+    }
+}
+
+@media (min-width: 1024px) {
+    .movie-container {
+        grid-template-columns: repeat(4, 1fr); /* Four movies per row for large screens */
+    }
+
+    .movie-card {
+        max-width: 240px; /* Larger cards for desktop */
+    }
+
+    .movie-poster {
+        height: 220px; /* Larger posters */
+    }
+
+    .movie-title {
+        font-size: 1em; /* Larger text for desktop */
+    }
+
+    .movie-info {
+        font-size: 0.8em; /* Larger text for desktop */
+    }
+
+    .btn {
+        padding: 5px 12px; /* Larger buttons */
+        font-size: 0.8em; /* Larger button text */
+    }
 }
 
 /* Video Player Modal */
@@ -147,7 +200,7 @@ body, html {
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
     font-size: 1.5em;
     cursor: pointer;
     color: #fff;
@@ -173,15 +226,17 @@ iframe {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #222;
-    color: #fff;
+    color: #ccc; /* Softer color */
+    font-size: 0.8em; /* Smaller footer text */
+    border-top: 1px solid #444;
 }
 
 footer a {
-    margin: 0 10px;
+    margin: 0 5px;
     text-decoration: none;
-    color: #fff;
+    color: #03A9F4; /* Highlight links */
 }
 
 footer a:hover {
