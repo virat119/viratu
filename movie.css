@@ -73,7 +73,7 @@
         }
 
         .movie-poster {
-            width: 100%;
+            width: 80%;
             height: 180px;
             object-fit: cover;
         }
@@ -89,7 +89,7 @@
         }
 
         .movie-info {
-            font-size: 0.7em;
+            font-size: 0.5em;
             color: #03A9F4;
             margin: 5px 0;
         }
