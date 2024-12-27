@@ -15,7 +15,7 @@ const movies = [
                 quality: "Full HD",
                 watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
                 downloadUrl: "#"
-            }
+            },
             
       
 
