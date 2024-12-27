@@ -15,15 +15,8 @@ const movies = [
                 quality: "Full HD",
                 watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
                 downloadUrl: "#"
-            },
-            {
-                title: "Redone",
-                poster: "#",
-                audio: "English",
-                quality: "Full HD",
-                watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
-                downloadUrl: "#"
             }
+            
         ];
 
         // Load Movies
