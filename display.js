@@ -18,24 +18,6 @@ const movies = [
             }
             ];
 
-       [
-            {
-                title: "Mufasha The Lion King",
-                poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/Download-Mufasa-The-Lion-King-Part-2-2024-HDCam-Hindi-Tamil-Telugu-English-ESub-480p-720p-1080p.webp",
-                audio: "ENGLISH",
-                quality: "HDCAM",
-                watchUrl: "https://mxdrop.to/e/mkv7e6d1b3xpzw",
-                downloadUrl: "https://mxdrop.to/f/mkv7e6d1b3xpzw"
-            },
-            {
-                title: "Redone",
-                poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/download (1).webp",
-                audio: "English",
-                quality: "Full HD",
-                watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
-                downloadUrl: "#"
-            }
-            ];
 
 
 
