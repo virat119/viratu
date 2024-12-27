@@ -1,19 +1,27 @@
-    // Movie Data
-        const movies = [
+
+const movies = [
             {
-                title: "Movie 1",
-                poster: "https://via.placeholder.com/300x200",
-                audio: "Hindi",
-                quality: "HD",
-                watchUrl: "https://www.youtube.com/embed/example1",
+                title: "Mufasha The Lion King",
+                poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/Download-Mufasa-The-Lion-King-Part-2-2024-HDCam-Hindi-Tamil-Telugu-English-ESub-480p-720p-1080p.webp",
+                audio: "ENGLISH",
+                quality: "HDCAM",
+                watchUrl: "https://mxdrop.to/e/mkv7e6d1b3xpzw",
+                downloadUrl: "https://mxdrop.to/f/mkv7e6d1b3xpzw"
+            },
+            {
+                title: "Redone",
+                poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/download (1).webp",
+                audio: "English",
+                quality: "Full HD",
+                watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
                 downloadUrl: "#"
             },
             {
-                title: "Movie 2",
-                poster: "https://via.placeholder.com/300x200",
+                title: "Redone",
+                poster: "#",
                 audio: "English",
-                quality: "Full Hd",
-                watchUrl: "https://www.youtube.com/embed/example2",
+                quality: "Full HD",
+                watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
                 downloadUrl: "#"
             }
         ];
