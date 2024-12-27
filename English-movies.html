@@ -1,443 +1,56 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Browse and watch the latest English Hollywood movies in high definition. Explore top blockbusters, trailers, and download options for the newest Hollywood films. Stay updated with Movies HD Box.">
-<link rel="canonical" href="https://www.movieshdbox.site/English-movies.html">
-<title>MoviesHDBOX - Latest English Hollywood Movies | Blockbusters & Trailers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesHdbox</title>
+<link rel="stylesheet" href="styles.css">
 
-<script src="https://alwingulla.com/88/tag.min.js" data-zone="117038" async data-cfasync="false"></script>
-<style>
-/* Basic Styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-.banner {
-    background: #8e44ad; /* Solid purple background */
-    color: #fff; /* Default text color */
-    padding: 20px 40px; /* Adequate padding */
-    text-align: center;
-    font-size: 1.5em; /* Increased font size */
-    font-weight: bold;
-    margin-bottom: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
-    animation: fadeIn 9s ease-in-out infinite alternate, glow 1.5s ease-in-out infinite alternate, textColorChange 8s linear infinite;
-}
-
-/* Animation for fade-in effect */
-@keyframes fadeIn {
-    0% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Animation for glow effect */
-@keyframes glow {
-    0% {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
-    100% {
-        box-shadow: 0 8px 18px rgba(255, 255, 255, 0.6); /* White glow */
-    }
-}
-
-/* Animation for text color change */
-@keyframes textColorChange {
-    0% {
-        color: #ff6347; /* Tomato Red */
-    }
-    10% {
-        color: #ff4500; /* Orange Red */
-    }
-    20% {
-        color: #32cd32; /* Lime Green */
-    }
-    30% {
-        color: #1e90ff; /* Dodger Blue */
-    }
-    40% {
-        color: #ff1493; /* Deep Pink */
-    }
-    50% {
-        color: #ffff00; /* Yellow */
-    }
-    60% {
-        color: #8a2be2; /* Blue Violet */
-    }
-    70% {
-        color: #00fa9a; /* Medium Spring Green */
-    }
-    80% {
-        color: #ff69b4; /* Hot Pink */
-    }
-    90% {
-        color: #d2691e; /* Chocolate */
-    }
-    100% {
-        color: #f4a460; /* Sandy Brown */
-    }
-}
-        .animated-text {
-            font-size: 0.9em;
-            color: #ccc;
-            animation: fadeIn 5s ease-in-out infinite alternate;
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-
-        /* Status bar */
-        .status-bar {
-            background-color: #222;
-            color: #fff;
-            padding: 5px 10px;
-            text-align: center;
-            font-size: 0.8em;
-        }
-        .status-bar a {
-            color: #00BFFF;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-/* Movie card container styling */
-.movie-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Cards center align */
-    gap: 15px; /* Reduced gap between cards */
-    padding: 20px 10px;
-    background-color: #f5f5f5; /* Subtle light gray background */
-}
-
-/* Movie card styling */
-.movie-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid #ddd; /* Clean and subtle border */
-    border-radius: 10px; /* Smooth rounded edges */
-    padding: 10px 12px; /* Reduced padding for compact look */
-    width: 400px; /* Optimized width */
-    background-color: #fff; /* White background for clarity */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle depth */
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
-}
-
-.movie-card:hover {
-    transform: scale(1.03); /* Slight scaling on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-.movie-card img {
-    width: 90px; /* Slightly reduced size for a balanced look */
-    height: 135px; /* Maintains aspect ratio */
-    object-fit: cover; /* Prevents distortion */
-    border-radius: 8px; /* Smooth rounded corners for image */
-    margin-right: 12px; /* Reduced space between image and text */
-    border: 1px solid #ccc; /* Subtle border for image */
-}
-
-.movie-card h3 {
-    font-size: 1.1em; /* Optimized title size */
-    margin: 0;
-    color: #333; /* Clear and dark text for visibility */
-}
-
-.movie-card p {
-    font-size: 0.9em; /* Compact size for description */
-    color: #555; /* Subtle gray for description text */
-    margin-top: 4px;
-    line-height: 1.3; /* Balanced spacing between lines */
-}
-
-
-
-
-
-
-
-
-
-
-
-.movie-details {
-            flex: 1;
-        }
-       .movie-title {
-    font-size: 1em; /* Responsive size ke liye standard rakha */
-    margin-top: 5px;
-    font-weight: bold; /* Text ko highlighted banane ke liye */
-    color: #FF0000; /* Vibrant red color */
-    font-family: 'Arial', sans-serif; /* Modern aur clean font */
-    letter-spacing: 0.5px; /* Text ko aur sharp banane ke liye */
-    transition: color 0.3s ease-in-out; /* Smooth hover transition */
-}
-
-.movie-title:hover {
-    color: #C70039; /* Hover karte hi dark red shade */
-}
-
-@media screen and (max-width: 768px) {
-    .movie-title {
-        font-size: 0.9em; /* Mobile view ke liye chhota size */
-    }
-}
-.file-size {
-    font-size: 0.9em;
-    margin: 5px 0;
-    font-weight: bold;
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: colorChange 3s infinite alternate;
-}
-
-/* Keyframes for smooth color animation */
-@keyframes colorChange {
-    0% {
-        background: linear-gradient(90deg, #6a11cb, #2575fc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    25% {
-        background: linear-gradient(90deg, #00b4db, #0083b0);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    50% {
-        background: linear-gradient(90deg, #fbc2eb, #a18cd1);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    75% {
-        background: linear-gradient(90deg, #f8cdda, #1fd1f9);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    100% {
-        background: linear-gradient(90deg, #a8c0ff, #3f2b96);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-    }
-}
-}
-        }
-     .buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 10px;
-    gap: 10px; /* Added to create space between buttons */
-}
-
-.download-button, .play-button {
-    display: inline-block;
-    padding: 4px 10px; /* Slightly increased padding for better appearance */
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    border: none;
-    font-size: 1em; /* Slightly larger font size for better readability */
-    transition: background-color 0.4s, transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.download-button:hover, .play-online-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05); /* Button expands on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    animation: buttonGlow 1s infinite alternate;
-}
-
-/* Animation for glowing effect */
-@keyframes buttonGlow {
-    0% {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    100% {
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    }
-}
-
-.download-button {
-    background: linear-gradient(90deg, #007BFF, #00D1FF);
-    color: white;
-    border-radius: 10px;
-}
-
-.play-online-button {
-    background: linear-gradient(90deg, #28a745, #20c997);
-    color: white;
-    border-radius: 10px;
-}
-
-.download-button:hover {
-    background: linear-gradient(90deg, #0056b3, #0084e6);
-}
-
-.play-online-button:hover {
-    background: linear-gradient(90deg, #218838, #1e8e7a);
-}
-        /* Telegram icon styling */
-        .telegram-link img {
-            width: 200px;
-            display: block;
-            margin: 20px auto;
-            cursor: pointer;
-        }
-    
-
-/* Footer Styling */
-    footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #222;
-        color: white;
-        text-align: center;
-        padding: 15px 0;
-        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
-        z-index: 999;
-        opacity: 0; /* Initially hidden */
-        transform: translateY(100%); /* Slide out of view */
-        transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
-    }
-
-    footer.show {
-        opacity: 1; /* Make visible */
-        transform: translateY(0); /* Slide into view */
-    }
-
-    footer a {
-        color: #f1c40f;
-        text-decoration: none;
-        margin: 0 15px;
-        font-size: 14px;
-        font-weight: bold;
-    }
-
-    footer a:hover {
-        text-decoration: underline;
-        color: #fff;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 600px) {
-        footer {
-            padding: 10px 0;
-            font-size: 12px;
-        }
-
-        footer a {
-            font-size: 12px;
-            margin: 0 8px;
-        }
-    }
-
-</style>
 </head>
 <body>
     <!-- Header (Banner) -->
     <div class="banner">
-        MoviesHdbox
-        <div class="animated-text">Your Ultimate Movieshdbox - Download and Watch</div>
+        <img src="https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/logo.png" alt="MoviesHdbox Logo" class="banner-logo">
+        <h1 class="banner-text">Welcome to MoviesHdbox</h1>
     </div>
 
-<!-- Telegram Link -->
+    <!-- Sliding Info -->
+    <div class="site-info">
+        <marquee>Explore the latest in Bollywood, South, Hollywood, Netflix Series, Prime video, and more! Join MoviesHdbox now!</marquee>
+    </div>
+
+    <!-- Telegram Link -->
     <div class="telegram-link">
         <a href="https://t.me/Movieshdbox123" target="_blank">
             <img src="https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/tg.png" alt="Join us on Telegram">
         </a>
     </div>
 
-<!-- English  Movies Section -->
-<div class="movie-card-container">
+    <!-- Movie Cards -->
+    <div class="movie-container" id="movie-container">
+        <!-- Movies will load dynamically here -->
+    </div>
 
-        <div class="movie-card">
-            <img src="https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/Download-Mufasa-The-Lion-King-Part-2-2024-HDCam-Hindi-Tamil-Telugu-English-ESub-480p-720p-1080p.webp" alt="Red One Poster">
-            <div class="movie-details">
-                <div class="movie-title">Mufasha The Lion king English</div>
-                <div class="file-size">File Size 1Gb </div>
-                <div class="buttons">
-                    <a href="https://mxdrop.to/f/mkv7e6d1b3xpzw" class="download-button">Watch Now</a>
-                </div>
-            </div>
-      </div>
-        
-        
-        
-        
-        
-        
-        <div class="movie-card">
-            <img src=" https://raw.githubusercontent.com/virat119/images/refs/heads/main/download (1).webp" alt="Red One Poster">
-            <div class="movie-details">
-                <div class="movie-title">Redone  (2024) 1080p HD.mkv</div>
-                <div class="file-size">Lunguage> English</div>
-                <div class="buttons">
-                    <a href="https://vidsrc.net/embed/movie/tt14948432" class="download-button">Watch Now</a>
-                </div>
-            </div>
-      </div>
-<div class="movie-card">
-            <img src="https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/mbZQsj9e5MmxLWsHdyew7di30aM.webp" alt="Red One Poster">
-            <div class="movie-details">
-                <div class="movie-title"> Anora Full Pc Hd 2024 </div>
-                <div class="file-size">Lunguage🗣️ English</div>
-                <div class="buttons">
-                    <a href="https://pub-51b90112ce364c91978b92138322581c.r2.dev/Anora.2024.720p.WEB-DL.x264.ESub.KMMOVIES.TOP.mkv?response-content-disposition=attachment;filename=Anora.2024.720p.WEB-DL.x264.ESub.KMMOVIES.TOP.mkv" class="download-button">Watch Now</a>
-                </div>
-            </div>
-</div>
+    <!-- Video Player Modal -->
+    <div id="player-modal" class="player-modal">
+        <div class="player-content">
+            <span class="close-btn" onclick="closePlayer()">&times;</span>
+            <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+            <button class="fullscreen-btn" onclick="toggleFullScreen()">Full Screen</button>
+        </div>
+    </div>
 
+    <!-- Footer Section -->
+    <footer>
+        <a href="https://www.movieshdbox.site/index.html">Home</a>
+        <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
+        <a href="https://www.movieshdbox.site/south-movies.html">South</a>
+        <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
+        <a href="https://www.movieshdbox.site/English-movies.html">English</a>
+        <a href="https://www.movieshdbox.site/dmca.html">DMCA</a>
+    </footer>
 
-
-
-
-
-</div>
-
-
-<!-- Footer Section -->
-<footer id="dynamicFooter">
-    <a href="https://www.movieshdbox.site/index.html">Home</a>
-    <a href="https://www.movieshdbox.site/bollywood-movies.html">Bollywood</a>
-    <a href="https://www.movieshdbox.site/south-movies.html">South</a>
-    <a href="https://www.movieshdbox.site/hollywood-movies.html">Hollywood</a>
-    <a href="https://www.movieshdbox.site/English-movies.html">English</a>
-    <a href="https://www.movieshdbox.site/dmca.html">DMCA</a>
-</footer>
-   <script>
-    // Show footer when the user scrolls to the bottom
-    window.addEventListener('scroll', function () {
-        var footer = document.getElementById('dynamicFooter');
-        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
-            footer.classList.add('show'); // Show footer
-        } else {
-            footer.classList.remove('show'); // Hide footer
-        }
-    });
-   </script>
+<script src="display.js"></script>
 </body>
-
-        
 </html>
-
