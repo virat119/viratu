@@ -1,7 +1,8 @@
 
-const movies = [
+    // Movie Data
+        const movies = [
             {
-                title: "Mufasha The Lion King",
+                title: "Mufasha The Lion king",
                 poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/Download-Mufasa-The-Lion-King-Part-2-2024-HDCam-Hindi-Tamil-Telugu-English-ESub-480p-720p-1080p.webp",
                 audio: "ENGLISH",
                 quality: "HDCAM",
@@ -12,20 +13,25 @@ const movies = [
                 title: "Redone",
                 poster: "https://raw.githubusercontent.com/virat119/images/refs/heads/main/download (1).webp",
                 audio: "English",
-                quality: "Full HD",
+                quality: "Full Hd",
                 watchUrl: "https://vidsrc.net/embed/movie/tt14948432",
                 downloadUrl: "#"
+            },
+            {
+                title: "Anora",
+                poster: "https://raw.githubusercontent.com/virat119/viratu/refs/heads/main/Images/mbZQsj9e5MmxLWsHdyew7di30aM.webp",
+                audio: "English",
+                quality: "Full Hd",
+                watchUrl: "https://pub-51b90112ce364c91978b92138322581c.r2.dev/Anora.2024.720p.WEB-DL.x264.ESub.KMMOVIES.TOP.mkv?response-content-disposition=attachment;filename=Anora.2024.720p.WEB-DL.x264.ESub.KMMOVIES.TOP.mkv",
+                downloadUrl: "https://pub-51b90112ce364c91978b92138322581c.r2.dev/Anora.2024.720p.WEB-DL.x264.ESub.KMMOVIES.TOP.mkv?response-content-disposition=attachment;filename=Anora.2024.720p.WEB-DL.x264.ESub.KMMOVIES.TOP.mkv"
             }
-            ];
+            
 
 
 
+    ];
 
-
-
-
-
-// Load Movies
+        // Load Movies
         const movieContainer = document.getElementById('movie-container');
 
         movies.forEach(movie => {
