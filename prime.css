@@ -110,18 +110,18 @@ body {
         }
 
         .movie-info h2 {
-            font-size: 1rem;
+            font-size: 0.5rem;
             color: hsl(calc(360 * var(--random1)), 70%, 50%);
         }
 
         .movie-info p {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
             color: hsl(calc(360 * var(--random2)), 60%, 50%);
         }
 
         .movie-info .size-quality {
             color: red;
-            font-size: 0.8rem;
+            font-size: 0.5rem;
             font-weight: bold;
         }
 
@@ -166,7 +166,7 @@ body {
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 50%;
+            width: 40%;
         }
 
         .download-options a {
@@ -174,8 +174,8 @@ body {
             text-decoration: none;
             color: white;
             background: #4CAF50; /* Green Color */
-            padding: 10px;
-            margin: 5px 0;
+            padding: 08px;
+            margin: 4px 0;
             border-radius: 5px;
             transition: background 0.3s ease;
         }
