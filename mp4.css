@@ -1,0 +1,877 @@
+a:focus,
+a:hover,
+body {
+  color: #000;
+}
+.btn1,
+.cen,
+h1,
+h2 {
+  text-align: center;
+}
+.B2,
+.dwn {
+  text-shadow: 0 1px 0;
+}
+.dwn1,
+.dwn2 {
+  transition-duration: 0.2s;
+}
+.B2,
+.absmiddle {
+  vertical-align: middle;
+}
+body {
+  font-size: 15px;
+  font-family: "Trebuchet MS", arial;
+  background-color: #fff;
+  margin: 0;
+}
+a:active,
+a:link,
+a:visited {
+  color: red;
+  text-decoration: none;
+}
+img {
+  border-style: none;
+}
+input[type="submit"],
+input[type="submit"]:hover,
+input[type="textarea"] {
+  border-top: 1px solid #90c45f;
+  border-bottom: 1px solid #90c45f;
+  border-left: 1px solid #90c45f;
+  border-right: 1px solid #90c45f;
+  color: #fff;
+  margin: 1px;
+}
+h1,
+h2 {
+  background-color: #df0174;
+  border-bottom: 1px #df0174 solid;
+  padding: 6px;
+  color: #fff;
+  font-size: 15px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  background: #f9f9f9;
+  border: 1px solid #aeaeae;
+  padding: 5px;
+  color: #aeaeae;
+  box-shadow: inset 1px 1px 1px 1px;
+  border-radius: 3px;
+}
+input[type="submit"] {
+  background: #d67728;
+  padding: 5px 7px;
+}
+input[type="submit"]:hover {
+  background: #4275ea;
+  padding: 5px 7px;
+}
+.absmiddle {
+  border: 1px solid #999;
+  padding: 1px;
+  box-shadow: 0 0 2px #999;
+}
+.btn1,
+.btn2 {
+  border: none;
+  padding: 4px 50px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn1 {
+  background-color: #ff4719;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+.btn2 {
+  background-color: #4caf50;
+  text-align: center;
+  margin-top: 1px;
+  cursor: pointer;
+}
+.dwn,
+.dwn1 {
+  border: 1px solid #c0171a;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+}
+.dwn {
+  display: inline-block;
+  color: #fff;
+  background-color: #fd2e18;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px;
+  padding: 4px 20px;
+  text-decoration: none;
+}
+.dwn1 {
+  padding: 3px 12px;
+  margin: 1px;
+  background: #d70c0c;
+  color: #fff;
+  border-radius: 4px;
+}
+.dwn1:hover,
+.dwn2 {
+  border: 1px solid #c0171a;
+}
+.dwn1:hover {
+  background: #cb0066;
+  color: #000;
+}
+.dwn1 a:hover {
+  color: #000;
+}
+.dwn2 {
+  padding: 5px 12px;
+  text-align: center;
+  margin: 1px;
+  background: #d70c0c;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.dwn2:hover {
+  background: #cb0066;
+  border: 1px solid #c0171a;
+  color: #000;
+}
+.space1,
+.space2 {
+  background-color: #fff;
+  border: 1px solid #ecd5d2;
+  font-weight: 400;
+}
+.dwn2 a:hover {
+  color: #000;
+}
+.space1 {
+  padding: 15px;
+}
+.space2 {
+  padding: 8px;
+}
+.dlwn,
+.dlwn2 {
+  padding: 5px 50px;
+  border: 2px solid #c0171a;
+  color: #fff;
+  margin: 1px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.dlwn {
+  text-align: center;
+  background: #333;
+  border-radius: 4px;
+}
+.dlwn2 {
+  background: #000;
+  border-radius: 4px;
+}
+.dlwn:hover,
+.server {
+  border: 2px solid #c0171a;
+}
+.dlwn:hover {
+  background: #d70c00;
+  color: #000;
+}
+.server {
+  padding: 4px 10px;
+  text-align: center;
+  margin: 1px;
+  background: #428bca;
+  color: #fff;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+a.downloadbutton {
+  background: url() repeat-x #d67728;
+  border: 1px solid #d26c24;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 15px;
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  border-radius: 3px;
+}
+a.downloadbutton:hover {
+  background: url(http://s33.postimg.org/wubco7ofz/header.gif) repeat-x #308bcf;
+  border: 1px solid #1079a8;
+  color: #fff;
+  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.25);
+}
+a.downloadbutton:active {
+  background: #308bcf;
+  border: 1px solid #1079a8;
+  text-shadow: 1px 1px 1px #888;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.playads {
+  font-weight: 400;
+}
+.gn {
+  color: #3a3;
+  font-weight: 400;
+  font-size: 11px;
+  font-style: italic;
+}
+.Apps,
+.tags {
+  font-size: small;
+}
+.gm {
+  padding: 3px;
+  display: inline;
+}
+.box {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  color: #333;
+  text-align: center;
+  margin: 6px;
+  padding: 5px;
+}
+.Apps {
+  background-color: #fade8b;
+  color: red;
+  border-bottom-width: 0;
+  border-bottom-color: #f6960d;
+  border-bottom-style: solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  font-weight: 700;
+}
+.movieRaw {
+  background-color: #fff;
+  color: red;
+}
+.asm {
+  font-weight: 600;
+  font-weight: 700;
+  display: block;
+  color: #000;
+  white-space: pre;
+  white-space: pre-wrap;
+  border: 1px solid #ededed;
+  background: #fcfcfc;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  line-height: 22px;
+  padding: 8px 10px;
+}
+.dailyupdate {
+  background-color: #fafafa;
+  color: #000;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+  border-bottom-style: solid;
+  padding: 5px 3px 5px 5px;
+  font-weight: 700;
+  display: block;
+}
+.back,
+.path {
+  background-color: #eee;
+  padding: 5px 5px 8px;
+  border-top: 1px solid #ecd5d2;
+  border-bottom: 1px solid #ecd5d2;
+}
+.back {
+  text-align: center;
+}
+.back div {
+  padding-top: 5px;
+}
+.pgn {
+  text-align: center;
+  padding-top: 10px;
+  background: #eee;
+}
+.pgn a,
+.pgn span {
+  margin: 0 2px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.pgn div {
+  padding-top: 5px;
+}
+.upcomming {
+  background-color: #fafafa;
+  padding: 5px;
+  border-bottom: 1px solid #ecd5d2;
+  font-weight: 700;
+}
+.upcomming:hover {
+  background: #fef6c4;
+}
+.tags,
+.topupdate {
+  background-color: #fff8dc;
+}
+.topupdate {
+  border-bottom: 1px dashed #bbb;
+  border-top: 1px dashed #bbb;
+  padding: 4px;
+  font-weight: 700;
+}
+.tags {
+  border-bottom: 1px dotted #bbb;
+  border-top: 1px dotted #bbb;
+  padding: 5px 10px;
+  text-align: center;
+}
+.movie,
+.movies {
+  padding: 6px;
+  border-bottom: 1px #ecd5d2 solid;
+}
+.list {
+  font-weight: 400;
+}
+.catRowHome,
+.la,
+.mcatRow,
+.movie,
+.movies {
+  font-weight: 700;
+}
+.movie {
+  background-color: #fafafa;
+}
+.movie:hover {
+  background: #fef6c4;
+  color: navy;
+}
+.movies {
+  background-color: #eeecec;
+}
+.movies:hover {
+  background: #fef6c4;
+  color: navy;
+}
+.la {
+  background-color: #fafafa;
+  border-bottom: 1px dashed #bbb;
+  padding: 3px;
+}
+.mcatRow div {
+  display: table-cell;
+}
+.mcatRow div img {
+  margin-right: 5px;
+}
+.catRowHome,
+.mcatRow {
+  border-top: 1px solid #ddd;
+}
+.catRowHome:hover,
+.mcatRow:hover {
+  background: #f5f5f5;
+}
+.catRowHome a,
+.mcatRow a {
+  display: block;
+  font-weight: 700;
+  background: url(https://www.mp4moviez.condos/web/20180313225945im_/http://mp4moviez.biz/images/arrow.png)
+    right center no-repeat;
+  padding: 9px;
+}
+.mcatRow a div span,
+a.movieList2 {
+  background-color: #eeecec;
+  padding: 8px;
+  border-bottom: 1px #ecd5d2 solid;
+  font-weight: 700;
+  display: block;
+}
+.movielist,
+.movielist1 {
+  padding: 7px;
+  font-weight: 700;
+}
+a.movieList2:hover {
+  background: #fef6c4;
+  color: navy;
+}
+.movielist {
+  background-color: #fafafa;
+  border-bottom: 1px #ecd5d2 solid;
+}
+.movielist:hover {
+  background: #fafcfc;
+}
+.movielist1 {
+  background-color: #fafafa;
+  border-bottom: 1px #ecd5d2 solid;
+  border-left: 7px solid orange;
+}
+.jatt,
+.jatt1 {
+  padding: 4px;
+  font-size: 14px;
+  border-bottom: 1px #ecd5d2 solid;
+}
+.jatt {
+  background-color: #eeecec;
+}
+.jatt1 {
+  background-color: #fafafa;
+}
+.done {
+  background-color: #e7feed;
+  color: green;
+  font-weight: 700;
+  width: 100%;
+}
+.blk,
+.blk a,
+.no,
+.update {
+  color: #fff;
+}
+.comingup {
+  background-color: #fff;
+  border-bottom: 1px dashed #ccc;
+  padding: 3px;
+  font-weight: 700;
+}
+.no {
+  border: 2px solid #085990;
+  padding: 20px;
+  background: url(https://www.mp4moviez.condos/web/20180313225945im_/http://mp4moviez.biz/styles.css) -1px 0
+    no-repeat #0d6eaf;
+}
+.buttn {
+  line-height: 25px;
+  font-weight: 400;
+  font-family: Oswald;
+  text-transform: uppercase;
+  padding: 5px 16px 5px 0;
+  margin-right: 10px;
+  opacity: 0.959999978542327880859375;
+  box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  display: inline-block;
+}
+.blk,
+.topdownload,
+.update,
+.welcome {
+  font-weight: 700;
+}
+.design1,
+.design2,
+.design3 {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 5px;
+}
+.empty {
+  background: #fff;
+  border: 0;
+  text-align: center;
+  padding: 10px;
+}
+.design2 {
+  background: #2d89c5;
+}
+.design3 {
+  background: #e40046;
+}
+.design1 {
+  background: #eaa34b;
+}
+.posterss,
+.ss {
+  display: block;
+  margin: 0 auto 10px;
+  height: auto;
+  clear: both;
+}
+.topdownload {
+  background-color: #fafafa;
+  border-bottom: 1px inset #ecd5d2;
+  padding: 3px;
+  font-size: small;
+}
+.ss {
+  width: 360px;
+  box-shadow: 0 0 10 5px;
+  box-shadow: 0 0 10px 5px;
+  border-radius: 4px;
+}
+.posterss {
+  padding: 5px;
+  border: 3px solid;
+  box-shadow: 0 0 0 1px;
+  box-shadow: 0 0 10px 5px;
+  border-radius: 4px;
+}
+.cast,
+.category,
+.description,
+.dlcolor,
+.duration,
+.genre,
+.moviename,
+.releasedate,
+.releaser {
+  display: inline;
+}
+.update {
+  background-color: #df0174;
+  border-bottom: 2px #df0174 solid;
+  padding: 6px;
+  text-align: center;
+}
+.blk {
+  text-align: center;
+  background-color: #000;
+  margin: 0;
+  padding: 2px 2px 2px 10px;
+  border-bottom: 1px solid #abcdef;
+}
+.sitedis {
+  padding: 5px;
+  background: #ccc;
+}
+.welcome {
+  background-color: #444242;
+  color: #edebeb;
+  border-bottom-color: #f6960d;
+  border-bottom-style: groove;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  text-align: center;
+}
+.pinkheader a {
+  color: #b7cff7;
+}
+.notice {
+  padding: 5px;
+  text-align: center;
+  background-color: #f2f7fc;
+  border: 3px solid #d9d9d9;
+  border-radius: 5px;
+  margin: 2px;
+}
+.whole {
+  background-color: #fff;
+  border: 1px solid #ecd5d2;
+  padding: 4px;
+  font-weight: 400;
+}
+.server1,
+.server2,
+.server3,
+.server4,
+.server5 {
+  padding: 4px 10px;
+  color: #fff;
+}
+.server1 {
+  background: #eaa34b;
+}
+.server2 {
+  background: #2d89c5;
+}
+.server3 {
+  background: #eb6174;
+}
+.server4 {
+  background: #41bdb0;
+}
+.server5 {
+  background: #2d89c5;
+}
+.header {
+  background-color: #df0174;
+  border-bottom: 2px #df0174 solid;
+  padding: 6px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+.M1,
+.M2 {
+  padding: 5px;
+  border-bottom: 1px #ecd5d2 solid;
+}
+.M2 {
+  background-color: #eeecec;
+}
+.M1 {
+  background-color: #fafafa;
+}
+.releaser {
+  color: #27a1bf;
+}
+.description {
+  color: #9a01fa;
+}
+.moviename {
+  color: red;
+}
+.category {
+  color: #cb0066;
+}
+.cast {
+  color: #227bc0;
+}
+.genre {
+  color: #3a3;
+}
+.releasedate {
+  color: #00d2a5;
+}
+.duration {
+  color: #c56d01;
+}
+.dlcolor {
+  color: #fff;
+}
+.fb {
+  background-color: #ffc;
+  color: #333;
+  padding: 1px 2px;
+  font-weight: 400;
+  font-size: small;
+  border-width: 1px;
+  border-color: #e1e1ff;
+  border-style: solid;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+.B2,
+.up {
+  color: #fff;
+}
+.blank,
+.share {
+  padding: 2px;
+}
+.share {
+  background: #dde7f1;
+  border: #b0c5da;
+  text-align: center;
+}
+.B2 {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fd2e18;
+  border: 1px solid #c0171a;
+  font-weight: 500;
+  appearance: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px;
+  padding: 4px 20px;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+.mast,
+.news,
+.pgn a,
+.pgn span,
+.serch,
+.up {
+  font-weight: 700;
+}
+.tag {
+  background-color: #e8d7c7;
+  padding: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-top-width: 1px;
+  border-top-color: #a38e7a;
+  border-top-style: solid;
+}
+.up {
+  position: relative;
+  top: 11px;
+  padding: 3px;
+  background: url(https://www.mp4moviez.condos/images/up.gif) no-repeat;
+}
+.pb {
+  background-color: #fef6f6;
+  padding: 5px;
+  border-bottom: 1px #ecd5d2 solid;
+}
+.pb:hover {
+  background-color: #fef6c4;
+}
+.pgn a {
+  color: #369;
+}
+.pgn a,
+.pgn span {
+  border: 2px solid #2565a4;
+  padding: 2px 5px;
+  background: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.pgn a:hover,
+.pgn span {
+  background: #2565a4;
+  color: #fff;
+  border-color: #2565a4;
+}
+.mast {
+  color: #333;
+  padding: 5px 5px 5px 8px;
+  /* background: url(http://web.archive.org/web/20180313225945im_/http://s26.postimg.org/89p8iycrt/2029082_d71f3503ee.png)
+    top repeat-x #f4f4f4; */
+  border: 1px solid #ccc;
+  text-transform: capitalize;
+  text-align: center;
+}
+.news {
+  background-color: #f90;
+  color: #fff;
+  padding: 5px;
+  border-bottom: #e0e0e0;
+  text-align: center;
+}
+.bbb {
+  border-bottom: 1px solid #f90;
+  border-left: 1px solid #f90;
+  border-right: 1px solid #f90;
+  padding: 6px;
+}
+.serch {
+  background-color: #eeecec;
+  text-align: center;
+  border-bottom-width: 1px;
+  border-bottom-color: #ecd5d2;
+  border-bottom-style: solid;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 2px;
+}
+.top {
+  clear: both;
+  padding: 5px;
+  background: #ddd;
+}
+.toptxt {
+  font-size: 13px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #f60;
+  padding: 1px 10px 5px;
+  color: #333332;
+}
+.fbd,
+.t3 {
+  font-size: small;
+}
+.pgn1 a {
+  color: #369;
+}
+.pgn span,
+.pgn1 a {
+  border: 2px solid #2565a4;
+  padding: 2px 5px;
+  background: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.advi,
+.dot {
+  padding: 3px;
+}
+.pgn span,
+.pgn1 a:hover {
+  background: #9ab;
+  color: #fff;
+  border-color: #789;
+}
+.dot {
+  border-bottom: 1px dashed #bbb;
+}
+.advi {
+  border-bottom: 1px inset #ebe5e5;
+}
+.t3 {
+  background-color: #fef6f6;
+  color: green;
+  padding: 5px;
+  border-bottom: 1px #ecd5d2 solid;
+}
+.down,
+.fbd {
+  border-width: 1px;
+  border-style: solid;
+}
+.t3:hover {
+  background-color: #e8fdd2;
+}
+.down {
+  background-color: #ffe5f1;
+  color: #900;
+  border-color: #f9c;
+  padding: 5px 5px 9px;
+}
+.fbd {
+  background-color: #fade8b;
+  color: #333;
+  text-align: center;
+  padding: 1px 2px;
+  border-color: #e1e1ff;
+  margin: 1px;
+}
+.dailyupdate a div {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+
+
+.fl {
+border-bottom: 1px solid #ddd;
+    background: #fafafa;
+    font-weight:700;
+}
+.fl:hover {
+    background: #f5f5f5;
+}
+.fl a {
+    display: block;
+    padding: 8px;
+}
+.fl a div div {
+    vertical-align: middle;
+    display: table-cell;
+}
+.fl a img {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0;
+    margin-right: 5px;
+}
+.middle {
+    text-align:center;
+}
+.moviename {color:#000000}
