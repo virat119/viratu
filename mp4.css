@@ -929,5 +929,72 @@ border-bottom: 1px solid #ddd;
   display: inline-block;
   padding: 8px 16px;
   border-radius: 5px;
- 
+}
+
+/* Container ko center mein rakhna */
+.responsive-ad {
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center; /* Vertical center */
+    width: 100%; /* Full width of the container */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0; /* No extra padding */
+    text-align: center; /* Text ko center mein rakhna */
+    box-sizing: border-box; /* Padding aur border ko include karne ke liye */
+}
+
+/* iframe ki styling */
+.responsive-ad iframe {
+    width: 50%; /* Container ki full width */
+    max-width: 400px; /* Max width ko 400px tak rakhna */
+    height: 100px; /* Height chhoti karna */
+    border: none; /* Border ko hata dena */
+    box-sizing: border-box; /* Padding aur border ko size mein include karna */
+}
+
+/* Parent container for centering and full width */
+        .responsive-ad {
+            display: flex;
+            justify-content: center; /* Horizontally center */
+            align-items: center; /* Vertically align */
+            width: 100%; /* Full width of the screen */
+            margin: 0; /* Remove any extra margins */
+            padding: 0; /* Remove extra padding */
+            box-sizing: border-box; /* Include padding and borders in width */
+            text-align: center; /* Center align content */
+        }
+
+        /* iframe styling */
+        .responsive-ad iframe {
+            width: 100%; /* Full width of the screen */
+            max-width: 100%; /* Ensure it does not overflow */
+            height: 250px; /* Fixed height as per ad size */
+            border: none; /* Remove iframe border */
+            box-sizing: border-box; /* Ensure proper sizing */
+        }
+
+        /* Mobile-specific adjustment */
+        @media (max-width: 480px) {
+            .responsive-ad iframe {
+                width: 98%; /* Full width on small screens */
+                height: 65px; /* Same height for smaller devices */
+            }
+        
+
+
+/* Responsive ad styling */
+.responsive-bd iframe {
+    width: 100%; /* Make the ad take full width of its container */
+    height: auto; /* Automatically adjust height based on width */
+    max-width: 300px; /* Restrict the maximum width for desktop */
+    margin: 0 auto; /* Center the ad horizontally */
+}
+
+/* Mobile-specific adjustment */
+@media (max-width: 480px) {
+    .responsive-bd iframe {
+        width: 100%; /* Use full width of the mobile screen */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: 320px; /* Restrict max width for mobile */
+    }
 }
