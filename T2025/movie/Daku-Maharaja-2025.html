@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en-in">
 <head>  
@@ -112,13 +113,13 @@
 <div class="tags">Daku Maharaja – Movie (2025) free downlod, Daku Maharaja – Movie (2025) Telugu, Latest Telugu movies 2025, 2024, Daku Maharaja – Movie (2025) in High Quality HD, Daku Maharaja – Movie (2025) downlod in all formats, HD Mp4, AVI, HQ, 720p, 480p, 360p for PC, mobile, and tablets.</div>
 <br>
 
-<div class="responsive-ad" style="text-align: center; width: 468px; height: 60px;">
+<div class="responsive-ad">
     <script type="text/javascript">
         atOptions = {
             'key' : 'a963fad4fc67182b0f7440e17a973de1',
             'format' : 'iframe',
-            'height' : 60,
-            'width' : 468,
+            'height' : 50,  /* Chhoti size ke liye height */
+            'width' : 400,  /* Chhoti size ke liye width */
             'params' : {}
         };
     </script>
@@ -126,29 +127,43 @@
 </div>
 
 <style>
-/* Responsive ad styling */
+/* Container ko center mein rakhna */
 .responsive-ad {
-    text-align: center; /* Ad ko center me align karne ke liye */
-    max-width: 468px; /* Max width ko 468px set karna */
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center; /* Vertical center */
     width: 100%; /* Full width of the container */
     margin: 0 auto; /* Center horizontally */
+    padding: 0; /* No extra padding */
+    text-align: center; /* Text ko center mein rakhna */
+    box-sizing: border-box; /* Padding aur border ko include karne ke liye */
 }
 
-/* iframe ko responsive banaye */
+/* iframe ki styling */
 .responsive-ad iframe {
-    width: 100%; /* Full width of the container */
-    height: 60px; /* Fixed height */
-    max-width: 468px; /* Desktop par ad ka original size */
+    width: 100%; /* Container ki full width */
+    max-width: 400px; /* Max width ko 400px tak rakhna */
+    height: 50px; /* Height chhoti karna */
+    border: none; /* Border ko hata dena */
+    box-sizing: border-box; /* Padding aur border ko size mein include karna */
 }
 
 /* Mobile-specific adjustment */
 @media (max-width: 480px) {
     .responsive-ad iframe {
-        max-width: 320px; /* Mobile par ad ki max width 320px ho */
-        height: 60px; /* Maintain the height as per original size */
+        width: 100%; /* Mobile par full width */
+        max-width: 300px; /* Mobile par ad ki width 300px tak rakhna */
+        height: 50px; /* Same height mobile par bhi */
+    }
+
+    /* Mobile par koi extra space na ho */
+    .responsive-ad {
+        padding: 0; /* Mobile par koi padding nahi */
     }
 }
 </style>
+</div>
+
 
 <div class="tags"><a href="#"><b>New Bengali Movies 2023 Free downlod</b></a></div>
 <div class="tags"><a href="#"><b>Latest Hindi Web Series downlod</b></a></div>
